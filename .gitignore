@@ -1,0 +1,100 @@
+# Xcode
+#
+# Source: https://github.com/github/gitignore/blob/master/Swift.gitignore
+# Reason of update: previous used version of .gitignore only covers Xcode 4 projects and Obj-C.
+# This is a Swift project in Xcode 8 ¯\_(ツ)_/¯. 
+# Some of old settings still exist in 'Old settings' section.
+
+## Build generated
+build/
+DerivedData/
+fastlane/screenshots/**
+
+## Fastlane generated certificates
+fastlane/*.pem
+fastlane/*.p12
+fastlane/test_output
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+Package.pins
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+!Podfile.lock
+
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
+
+Carthage/Build
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+InHouse_*.mobileprovision
+fastlane/report.xml
+*.xcarchive
+
+
+##
+## Old settings.
+##
+
+## OS X temporary files that should never be committed
+.DS_Store
+*.swp
+profile
+
+# Xcode temporary files that should never be committed
+#
+# NB: NIB/XIB files still exist even on Storyboard projects, so we want this...
+
+*~.nib
+
+## AppCode
+**/.idea/
+Sketch/exports
+
+## Mock Server
+test-server/.bundle/
+test-server/*.log
+test-server/pid
