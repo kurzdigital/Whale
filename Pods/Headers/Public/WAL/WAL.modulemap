@@ -1,0 +1,6 @@
+module WAL {
+  umbrella header "WAL-umbrella.h"
+
+  export *
+  module * { export * }
+}

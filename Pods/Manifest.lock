@@ -1,0 +1,23 @@
+PODS:
+  - WAL (0.0.1):
+    - WebRTC
+  - WebRTC (63.11.20455)
+
+DEPENDENCIES:
+  - WAL (from `../../lib/WAL`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - WebRTC
+
+EXTERNAL SOURCES:
+  WAL:
+    :path: "../../lib/WAL"
+
+SPEC CHECKSUMS:
+  WAL: 3f76671b9de4df059816eb510d71940a3661e0df
+  WebRTC: f2a6203584745fe53532633397557876b5d71640
+
+PODFILE CHECKSUM: 81839a90937bd2efe127140ed7099fb126456992
+
+COCOAPODS: 1.5.3

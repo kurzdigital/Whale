@@ -1,0 +1,6 @@
+module Pods_Whale {
+  umbrella header "Pods-Whale-umbrella.h"
+
+  export *
+  module * { export * }
+}
