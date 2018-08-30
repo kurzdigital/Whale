@@ -7,480 +7,659 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5EEE406E593DAFF3B7DEC72C57D933C2 /* Pods-Whale-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE46FE16F0F4C6767ECD69051BA7BF86 /* Pods-Whale-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		65BE86D4EE254D35DA386B7CE6DACB1F /* Pods-WhaleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 419DE1D724C73079D8F3C473C35A1C74 /* Pods-WhaleTests-dummy.m */; };
-		67AA0767F5CD3B7D326510B55BABA901 /* WAL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F7A6FE77E6D5CE3EC81C885773536489 /* WAL-dummy.m */; };
-		6EC8B7BDEBBD5DDC818479FA69EB21DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7F0A2C0354F6851BCB3C9E7C13301C58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9BAA7822D23A215E5DECF9B64901F705 /* Pods-WhaleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E84C5746F711235B19E4C23A840855A1 /* Pods-WhaleUITests-dummy.m */; };
-		AD04C50E607B5BC6FA8DA6E863B6E02D /* WebRTCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B78498AF1F3338BC3024435BA4B390 /* WebRTCConnection.swift */; };
-		CC2282845D26EE35BBF6F24FB8364A09 /* WAL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1139BD1AEBB67624C6C96C216D11B2A6 /* WAL-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D01EF6317DB175981D8D4F32C7328747 /* Pods-Whale-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEAC1B7ECB80F6DBD678A62277C7640 /* Pods-Whale-dummy.m */; };
-		E0FF06C4E24C12CE20D9E6FC48ADF203 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ED81CE32D3C02E5649BCD615EBFD6A8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		139D231712B1EDDA6C7CA6241B00C441 /* SessionDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959B12B1C61B93A3094AB2F272503BF4 /* SessionDescription.swift */; };
+		13BE5B5DC035CA0173326892AD378E37 /* RTCCameraVideoCapturer+FormatConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6686998091587C7450421AAB3672AA /* RTCCameraVideoCapturer+FormatConstraints.swift */; };
+		144052E383527380956D5C03434E06A8 /* Pods-Whale-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F0395D1AFEDBB684FA5FEB0EDD784F /* Pods-Whale-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A5BAE8220BD458D1356FA4F15E2AD0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B220DE9811768A33367A37972807704 /* Foundation.framework */; };
+		1B2E5A8ADF6D8041D1A577496681481A /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B534C5002B91159F58BD8ED5FFA01C /* Candidate.swift */; };
+		2AD0E6F90062EB4A4C93B231A5EB660E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B220DE9811768A33367A37972807704 /* Foundation.framework */; };
+		3001651F44E1BC32A85726AFE203F9F3 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC500BD75919FF9D4870C84FA6C9FFC /* SSLSecurity.swift */; };
+		355A5449317B800353966F68CF43ADB3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B220DE9811768A33367A37972807704 /* Foundation.framework */; };
+		39092E50DCDCA25A2C6662075F8E525E /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDB32FD8D0EF5ED101C28EB6D6E6C61D /* Starscream-dummy.m */; };
+		3AD10B49EC7913F344BC60B5F9FC8A56 /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CC5C355872FA404119A6FA4F3BC9BBF /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44842719F75F98515789A7C39C8ABE4B /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DBB38A1711D4C0AD9C053212297763 /* WebSocket.swift */; };
+		527367C0D02CC0047A41A0A32C803115 /* SpreedClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5001ED30DA43CD4EDD152BD55B5BAA25 /* SpreedClient.swift */; };
+		5F4704BF645026523CB3E5F1DD913E19 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FCF2A31E61D9FE9A165B1D6F0BF99F /* Compression.swift */; };
+		7434E3C24EF10DAF1739D1B93A8D9763 /* WAL-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9130FF8E62A9D1558AFA0AD1585C5772 /* WAL-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FD651832145DF8621611140CCC151C5 /* Carrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1913191E0410F56D77BD6764F33C81D /* Carrier.swift */; };
+		9233A1BC0D0238B3C9847716395E891D /* SignalingMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC1731AB2F0E1AD1A1020A2A923FB18 /* SignalingMessage.swift */; };
+		965A61BE268DA05BADC7379A4E966C79 /* Pods-WhaleUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E312DA8399CD07E3388037EF2CBE9466 /* Pods-WhaleUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA3F87EB2D13413A6D5605DC799DF646 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B220DE9811768A33367A37972807704 /* Foundation.framework */; };
+		B5C8A73CB5E76B5FC67B7EF04B523409 /* Pods-WhaleUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 587D7BEAAB2DDEE1A00E2502243FB771 /* Pods-WhaleUITests-dummy.m */; };
+		B8DCECB7754AA937983EC1F35DF84608 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B220DE9811768A33367A37972807704 /* Foundation.framework */; };
+		BA87BAA856D19CE718B6BE8DD46AF08A /* Pods-WhaleTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20DD1397A247CB6DEADB7DCE1EDF9E88 /* Pods-WhaleTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C745B4A6C4CB6BA3F8D66109006B42AC /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */; };
+		D799D08450A5A474D156C893418BAB32 /* Pods-WhaleTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0EB588506FDCC90C82B9B680BDE4226 /* Pods-WhaleTests-dummy.m */; };
+		DE3C25600F92241D1E7B5CA509983D05 /* WAL-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D627F57C59DE13AC37BBDCEE0965AD62 /* WAL-dummy.m */; };
+		F5850C3A8933C6FEAE828C758FB0EE0D /* WebRTCConnection+Config+TurnServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C7F6341BB411E53A8A9AF8734A776C /* WebRTCConnection+Config+TurnServer.swift */; };
+		F687E1D4FF314797B076E3D6B69DD1BF /* Pods-Whale-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F1B70D4C9BC724A2E502FC728B95338 /* Pods-Whale-dummy.m */; };
+		FEB8BFA5A7E9D0426D4DB2B6F93A0D18 /* WebRTCConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2305AD54C4280427E96CDA9DF92B47C /* WebRTCConnection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3AF254737A049E9071CA05B5A201F050 /* PBXContainerItemProxy */ = {
+		1AE4418B4F4B46EA699F3135678683BE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8E788B66E08030A0AD16271A5F3EBF0F;
-			remoteInfo = WAL;
+			remoteGlobalIDString = F17FB0E7163CFAB8509A02E4552C4B36;
+			remoteInfo = Starscream;
 		};
-		99CEBA2649C51FFF79AAF8B17FF2CE8B /* PBXContainerItemProxy */ = {
+		3435B927E10CD913DBC1DD91E94F1A74 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F89315AE26AA4575AF4C1BB59FE69E42;
+			remoteGlobalIDString = 4D8C8F0DC325A7405A98081AA4814CBD;
 			remoteInfo = "Pods-Whale";
 		};
-		CE144D7E63B35F8D5694E1F54400DA27 /* PBXContainerItemProxy */ = {
+		BAAFC6B649421BFEECAC28C134B1F182 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F89315AE26AA4575AF4C1BB59FE69E42;
+			remoteGlobalIDString = F17FB0E7163CFAB8509A02E4552C4B36;
+			remoteInfo = Starscream;
+		};
+		D164A8EE1F51EED20DA1C34438EF6346 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81918F67A1156AF62BC2ECBC27A415A7;
+			remoteInfo = WAL;
+		};
+		F4AA82F3B58A0A38106EC56B124594CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D8C8F0DC325A7405A98081AA4814CBD;
 			remoteInfo = "Pods-Whale";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01DBF152D187CADECF32806AE46D057C /* RTCRtpSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpSender.h; path = WebRTC.framework/Headers/RTCRtpSender.h; sourceTree = "<group>"; };
-		03A12EF4D25780BDA323BA73C5D5A188 /* Pods-WhaleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0470FDE9FDAC0DA42D767894CFF02A6B /* RTCSessionDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCSessionDescription.h; path = WebRTC.framework/Headers/RTCSessionDescription.h; sourceTree = "<group>"; };
-		07D2D2A19BF4441A48CCF8677A160420 /* RTCAVFoundationVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAVFoundationVideoSource.h; path = WebRTC.framework/Headers/RTCAVFoundationVideoSource.h; sourceTree = "<group>"; };
-		11249314F9BB991BDD41386E97075988 /* WAL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAL.xcconfig; sourceTree = "<group>"; };
-		1139BD1AEBB67624C6C96C216D11B2A6 /* WAL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WAL-umbrella.h"; path = "../../Headers/Public/WAL/WAL-umbrella.h"; sourceTree = "<group>"; };
-		13542098541AFB6C96EC22837DFFADEE /* RTCVideoCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodec.h; path = WebRTC.framework/Headers/RTCVideoCodec.h; sourceTree = "<group>"; };
-		13B78498AF1F3338BC3024435BA4B390 /* WebRTCConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebRTCConnection.swift; path = WAL/WebRTCConnection.swift; sourceTree = "<group>"; };
-		13C808116E739955C268E17F68C5FDE9 /* Pods-Whale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Whale.debug.xcconfig"; sourceTree = "<group>"; };
-		19EAE0D2366BFAD6E269E1F61F72F227 /* RTCRtpCodecParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpCodecParameters.h; path = WebRTC.framework/Headers/RTCRtpCodecParameters.h; sourceTree = "<group>"; };
-		1AEAC1B7ECB80F6DBD678A62277C7640 /* Pods-Whale-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Whale-dummy.m"; sourceTree = "<group>"; };
-		1C780B384FE40A5E6012BF89857D0DEC /* RTCVideoEncoderVP8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP8.h; path = WebRTC.framework/Headers/RTCVideoEncoderVP8.h; sourceTree = "<group>"; };
-		1D0E2AE8E3CC1249A48EF669DD966DDE /* RTCRtpEncodingParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpEncodingParameters.h; path = WebRTC.framework/Headers/RTCRtpEncodingParameters.h; sourceTree = "<group>"; };
-		25C591E639DA1BB463A99EB66548A6CF /* RTCPeerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnection.h; path = WebRTC.framework/Headers/RTCPeerConnection.h; sourceTree = "<group>"; };
-		27D195022B43A6A087586D2B8A489DE4 /* WAL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WAL-prefix.pch"; sourceTree = "<group>"; };
-		2A59BCFCFED843E14E5447DD4ED81367 /* RTCMTLVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMTLVideoView.h; path = WebRTC.framework/Headers/RTCMTLVideoView.h; sourceTree = "<group>"; };
-		2AB97BBBA5469E4BF654924BEC49717D /* RTCDataChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDataChannel.h; path = WebRTC.framework/Headers/RTCDataChannel.h; sourceTree = "<group>"; };
-		2BB3FEB52449F928C29489F1D8210409 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
-		31ACDB135ACCBDD3E9305A20C990BBA0 /* Pods-WhaleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3365AA7A697A4F99C1F80F6A255C8C25 /* RTCIntervalRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIntervalRange.h; path = WebRTC.framework/Headers/RTCIntervalRange.h; sourceTree = "<group>"; };
-		33BD8BE9F3109B855B860BB7DB62FE51 /* RTCLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCLogging.h; path = WebRTC.framework/Headers/RTCLogging.h; sourceTree = "<group>"; };
-		35E6840C089C4A8D320D7E992DFDDE95 /* Pods-Whale-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Whale-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3B3F5FB34AF8193FB7AF122D3C4FA4C6 /* RTCVideoCodecFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecFactory.h; path = WebRTC.framework/Headers/RTCVideoCodecFactory.h; sourceTree = "<group>"; };
-		3E815E1F6863E8E5521E840E2488672D /* RTCVideoFrameBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrameBuffer.h; path = WebRTC.framework/Headers/RTCVideoFrameBuffer.h; sourceTree = "<group>"; };
-		419DE1D724C73079D8F3C473C35A1C74 /* Pods-WhaleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleTests-dummy.m"; sourceTree = "<group>"; };
-		42792AB581149F44AAE144B2EC0E410F /* RTCSSLAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCSSLAdapter.h; path = WebRTC.framework/Headers/RTCSSLAdapter.h; sourceTree = "<group>"; };
-		46824387DECE706208E2EBA6CA075DBC /* Pods-WhaleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4A1B01E36F1D465429F7C22F739EB620 /* RTCVideoDecoderVP8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP8.h; path = WebRTC.framework/Headers/RTCVideoDecoderVP8.h; sourceTree = "<group>"; };
-		4C3B0B666446B0B21A65F15E0ADFE42A /* RTCCameraPreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCCameraPreviewView.h; path = WebRTC.framework/Headers/RTCCameraPreviewView.h; sourceTree = "<group>"; };
-		4FC1D8392B7AB35F0371203981A7B3BC /* RTCMediaSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaSource.h; path = WebRTC.framework/Headers/RTCMediaSource.h; sourceTree = "<group>"; };
-		56D0EB9187D6A9BDF5CDBAD7365A1112 /* RTCVideoDecoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP9.h; path = WebRTC.framework/Headers/RTCVideoDecoderVP9.h; sourceTree = "<group>"; };
-		5FB837149A84FE0CAF7F1E2D809D8D91 /* RTCVideoTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoTrack.h; path = WebRTC.framework/Headers/RTCVideoTrack.h; sourceTree = "<group>"; };
-		5FF8432686B61178BFF274528442FC8F /* libPods-WhaleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhaleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		68B9D01B780254C4D4017C7D7E23F1D7 /* Pods-WhaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		697DAE059473A673B0ED4807D53CD8BC /* RTCCameraVideoCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCCameraVideoCapturer.h; path = WebRTC.framework/Headers/RTCCameraVideoCapturer.h; sourceTree = "<group>"; };
-		6A28C7A763632B5FC05C5D57F216E199 /* Pods-Whale.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Whale.modulemap"; sourceTree = "<group>"; };
-		6B15B2C42D846CD4BD22F201757085C4 /* Pods-WhaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6E84D435C0615163261E05485B5BB3FC /* UIDevice+RTCDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+RTCDevice.h"; path = "WebRTC.framework/Headers/UIDevice+RTCDevice.h"; sourceTree = "<group>"; };
-		7243EF3A06D23157C2A3F23F6BA4825C /* RTCMediaStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaStream.h; path = WebRTC.framework/Headers/RTCMediaStream.h; sourceTree = "<group>"; };
-		7295BA41B55E90701A6C1536D1098A2A /* Pods-WhaleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleUITests-resources.sh"; sourceTree = "<group>"; };
-		73A6DA4EE3B598834086094369EAB88D /* RTCAudioSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSource.h; path = WebRTC.framework/Headers/RTCAudioSource.h; sourceTree = "<group>"; };
-		75D37E69B89DFA677E7CC96A87E14957 /* license */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
-		78556D983353D2C0513D1ACF95E222CB /* RTCIceServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIceServer.h; path = WebRTC.framework/Headers/RTCIceServer.h; sourceTree = "<group>"; };
-		7E9F5B815A2A01656E415CE821219414 /* RTCAudioTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioTrack.h; path = WebRTC.framework/Headers/RTCAudioTrack.h; sourceTree = "<group>"; };
-		87E756669D199731FB745DE2FBFC8268 /* Pods-WhaleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleTests-resources.sh"; sourceTree = "<group>"; };
-		8D500E5029E721616094CBEC2BEC9259 /* RTCConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCConfiguration.h; path = WebRTC.framework/Headers/RTCConfiguration.h; sourceTree = "<group>"; };
-		90FBFCC79489AC40BDB175B3EBE07FF9 /* libPods-WhaleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhaleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		916D68FA3395BAC7C850D6B7FE164AB7 /* RTCMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMetrics.h; path = WebRTC.framework/Headers/RTCMetrics.h; sourceTree = "<group>"; };
+		0056665405DEBAE1E58607A6D972A8F8 /* RTCVideoEncoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP9.h; path = WebRTC.framework/Headers/RTCVideoEncoderVP9.h; sourceTree = "<group>"; };
+		00F0395D1AFEDBB684FA5FEB0EDD784F /* Pods-Whale-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Whale-umbrella.h"; sourceTree = "<group>"; };
+		0244AFDAB37552D973D7CEF86F56F5F9 /* Pods-WhaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		05C0A6148AAD349FFC44DE2A8A558853 /* RTCLegacyStatsReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCLegacyStatsReport.h; path = WebRTC.framework/Headers/RTCLegacyStatsReport.h; sourceTree = "<group>"; };
+		06895F2EF057DA78165E80FBD8F44E73 /* license */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = license; sourceTree = "<group>"; };
+		0934A349FE1C5AB082B19248E8BBC063 /* RTCMediaStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaStream.h; path = WebRTC.framework/Headers/RTCMediaStream.h; sourceTree = "<group>"; };
+		0C7E6B0F255F69667244D6A41B9119DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CC1731AB2F0E1AD1A1020A2A923FB18 /* SignalingMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SignalingMessage.swift; sourceTree = "<group>"; };
+		0EFE3B2B908C1D57274E55421B45FAD4 /* RTCPeerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnection.h; path = WebRTC.framework/Headers/RTCPeerConnection.h; sourceTree = "<group>"; };
+		0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1244314BAFEBE4A75E724480982F6C79 /* Starscream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.xcconfig; sourceTree = "<group>"; };
+		13A969810C5F92CE028FAD6D1E0AE9A9 /* RTCAudioTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioTrack.h; path = WebRTC.framework/Headers/RTCAudioTrack.h; sourceTree = "<group>"; };
+		13B98BBB6CDEEDE58BAEBBE83C709882 /* Pods-Whale-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Whale-resources.sh"; sourceTree = "<group>"; };
+		1A37FCD9457187830489B4EFC93BF80E /* RTCVideoEncoderVP8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP8.h; path = WebRTC.framework/Headers/RTCVideoEncoderVP8.h; sourceTree = "<group>"; };
+		1B862F444E52CA35BEE35AA8836E93E2 /* RTCMetricsSampleInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMetricsSampleInfo.h; path = WebRTC.framework/Headers/RTCMetricsSampleInfo.h; sourceTree = "<group>"; };
+		20DD1397A247CB6DEADB7DCE1EDF9E88 /* Pods-WhaleTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhaleTests-umbrella.h"; sourceTree = "<group>"; };
+		212668F75CD92C453E7ED1198591E13B /* RTCTracing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCTracing.h; path = WebRTC.framework/Headers/RTCTracing.h; sourceTree = "<group>"; };
+		29DBB38A1711D4C0AD9C053212297763 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/WebSocket.swift; sourceTree = "<group>"; };
+		2DCDF2078C13FF99E7BA2E6E7DA24484 /* RTCDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDispatcher.h; path = WebRTC.framework/Headers/RTCDispatcher.h; sourceTree = "<group>"; };
+		3F79E03848F71C1F04C34B938B497904 /* Pods-WhaleTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleTests-resources.sh"; sourceTree = "<group>"; };
+		3FC2860B4E5EE745D768BF5D5211BDD4 /* RTCRtpParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpParameters.h; path = WebRTC.framework/Headers/RTCRtpParameters.h; sourceTree = "<group>"; };
+		3FDBD01D4EC9F2A7CE96889E2D0C14AE /* WAL-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WAL-prefix.pch"; sourceTree = "<group>"; };
+		470404B013782FDE16A2527052821C0D /* RTCFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCFileLogger.h; path = WebRTC.framework/Headers/RTCFileLogger.h; sourceTree = "<group>"; };
+		49E18993D00134328BFDDC25D4B6F7F2 /* RTCAudioSessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSessionConfiguration.h; path = WebRTC.framework/Headers/RTCAudioSessionConfiguration.h; sourceTree = "<group>"; };
+		4CEA6B702E5178C3E8C7EF16A0C8B3C5 /* RTCAudioSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSource.h; path = WebRTC.framework/Headers/RTCAudioSource.h; sourceTree = "<group>"; };
+		4D73C95EBA0DA15DA90A83B23D9BCB81 /* WebRTC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebRTC.h; path = WebRTC.framework/Headers/WebRTC.h; sourceTree = "<group>"; };
+		4DC6CA4B7D3CDBD99C5A6671203A055E /* WAL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WAL.modulemap; sourceTree = "<group>"; };
+		5001ED30DA43CD4EDD152BD55B5BAA25 /* SpreedClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpreedClient.swift; sourceTree = "<group>"; };
+		50C7F6341BB411E53A8A9AF8734A776C /* WebRTCConnection+Config+TurnServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "WebRTCConnection+Config+TurnServer.swift"; sourceTree = "<group>"; };
+		52FC1D1F4AC65B4CF8A474EDD1C1D563 /* Pods-Whale-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Whale-acknowledgements.plist"; sourceTree = "<group>"; };
+		5355618F1A2C8364159AD68DAD56E175 /* RTCMediaStreamTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaStreamTrack.h; path = WebRTC.framework/Headers/RTCMediaStreamTrack.h; sourceTree = "<group>"; };
+		55D7FA1BF7C6AD519EB6FFC10EC6FA5B /* RTCVideoRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoRenderer.h; path = WebRTC.framework/Headers/RTCVideoRenderer.h; sourceTree = "<group>"; };
+		587D7BEAAB2DDEE1A00E2502243FB771 /* Pods-WhaleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleUITests-dummy.m"; sourceTree = "<group>"; };
+		5B220DE9811768A33367A37972807704 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BF5F9788238E17009548EC97E675C69 /* Pods-WhaleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6325EE00C43EDBB838D1CE49767C8CA0 /* RTCVideoCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCapturer.h; path = WebRTC.framework/Headers/RTCVideoCapturer.h; sourceTree = "<group>"; };
+		676823DB33045599A8DD2030FBB9BD68 /* Pods-Whale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Whale.debug.xcconfig"; sourceTree = "<group>"; };
+		6B1E8B943C65DAF65C5CD7D3974CD554 /* RTCMediaConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaConstraints.h; path = WebRTC.framework/Headers/RTCMediaConstraints.h; sourceTree = "<group>"; };
+		6B7EB1EBBEE556BCA2E52A09B33D6E82 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6BE868178F6917893FFAC970C5CABD32 /* RTCMediaSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaSource.h; path = WebRTC.framework/Headers/RTCMediaSource.h; sourceTree = "<group>"; };
+		6CFFF1854589B8AE8830F3C245622B97 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		6E6686998091587C7450421AAB3672AA /* RTCCameraVideoCapturer+FormatConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "RTCCameraVideoCapturer+FormatConstraints.swift"; sourceTree = "<group>"; };
+		6F1B70D4C9BC724A2E502FC728B95338 /* Pods-Whale-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Whale-dummy.m"; sourceTree = "<group>"; };
+		79402F7290972166BC65F9D774C9B005 /* RTCVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrame.h; path = WebRTC.framework/Headers/RTCVideoFrame.h; sourceTree = "<group>"; };
+		798A963327214EA349629275F2C2DCD0 /* RTCVideoDecoderVP8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP8.h; path = WebRTC.framework/Headers/RTCVideoDecoderVP8.h; sourceTree = "<group>"; };
+		7ABB22956460CB05E524CA2A31ADA1E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE2A04723205C371C680E4288E4E306 /* Pods-WhaleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7EF084576AE0C9FAEC816B9FDD0C4C48 /* RTCSSLAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCSSLAdapter.h; path = WebRTC.framework/Headers/RTCSSLAdapter.h; sourceTree = "<group>"; };
+		838D37BA6AD3FE167E0C8905FFF30BFF /* RTCPeerConnectionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnectionFactory.h; path = WebRTC.framework/Headers/RTCPeerConnectionFactory.h; sourceTree = "<group>"; };
+		838F99F65FD1CF20F76E952A54B3E40C /* RTCEAGLVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCEAGLVideoView.h; path = WebRTC.framework/Headers/RTCEAGLVideoView.h; sourceTree = "<group>"; };
+		851EE4A7C0EA16C31AE051C0294796D1 /* RTCFieldTrials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCFieldTrials.h; path = WebRTC.framework/Headers/RTCFieldTrials.h; sourceTree = "<group>"; };
+		8925E0D0378957A9CD2316A53E255F4C /* Pods-WhaleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8A1C44CD89BA9F8E2475C933236B822F /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		8E08BBB5DBCBA98625005D161A098D7C /* RTCRtpCodecParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpCodecParameters.h; path = WebRTC.framework/Headers/RTCRtpCodecParameters.h; sourceTree = "<group>"; };
+		8E66580D70D405782220BB8136CD92D5 /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90B0E8A59DCB4D92A4CB82F018800D58 /* Pods-WhaleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleTests-frameworks.sh"; sourceTree = "<group>"; };
+		9130FF8E62A9D1558AFA0AD1585C5772 /* WAL-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WAL-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		944D736B0C095C1772E9197FE0AEE9E9 /* RTCFieldTrials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCFieldTrials.h; path = WebRTC.framework/Headers/RTCFieldTrials.h; sourceTree = "<group>"; };
-		947A0D7C2C10249E55CF93580CCEE137 /* RTCMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMacros.h; path = WebRTC.framework/Headers/RTCMacros.h; sourceTree = "<group>"; };
-		95168845A6B4E5F068724A4492D53594 /* RTCRtpParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpParameters.h; path = WebRTC.framework/Headers/RTCRtpParameters.h; sourceTree = "<group>"; };
-		9562DC7976EDB7078281827DCAC352BF /* WAL.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WAL.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		96A6EC28DB31518D666B13FEF37D8B30 /* Pods-WhaleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		9871E7FFFBA2D32AF1C7259BDF4FDF1E /* Pods-Whale-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Whale-resources.sh"; sourceTree = "<group>"; };
-		9B6F796F84BCF6703A36979066C12B72 /* WAL.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = WAL.modulemap; path = ../../Headers/Public/WAL/WAL.modulemap; sourceTree = "<group>"; };
-		9DD442B28CD959860A149BB532FBA296 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		9DD840A67E7B66AD9E6720F85090C445 /* RTCMetricsSampleInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMetricsSampleInfo.h; path = WebRTC.framework/Headers/RTCMetricsSampleInfo.h; sourceTree = "<group>"; };
-		9EEFDC61D0BB9AD760553A92D8CBF91A /* RTCFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCFileLogger.h; path = WebRTC.framework/Headers/RTCFileLogger.h; sourceTree = "<group>"; };
-		9FAFDED6866315A4EE1EFFD056AB40FA /* RTCVideoRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoRenderer.h; path = WebRTC.framework/Headers/RTCVideoRenderer.h; sourceTree = "<group>"; };
-		A4DA1823E1FA1D3AE350010DD7896964 /* Pods-WhaleUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A58D34A2928BF7DF47B66D023B550244 /* Pods-Whale-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Whale-acknowledgements.plist"; sourceTree = "<group>"; };
-		ABA4AC537FE40BBF70FC34589040053C /* Pods-WhaleUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleUITests-frameworks.sh"; sourceTree = "<group>"; };
-		AD908017D7ED4935A70848884AE3ECD5 /* libPods-Whale.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Whale.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFD3F97DE22CA6DF2F4D2C59FCA659B1 /* WebRTC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebRTC.h; path = WebRTC.framework/Headers/WebRTC.h; sourceTree = "<group>"; };
-		B0C3E9BCFBDD1FB506B7B28452999895 /* RTCIceCandidate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIceCandidate.h; path = WebRTC.framework/Headers/RTCIceCandidate.h; sourceTree = "<group>"; };
-		B13EB15E0F10FC00CB200C9851A46F86 /* RTCRtpReceiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpReceiver.h; path = WebRTC.framework/Headers/RTCRtpReceiver.h; sourceTree = "<group>"; };
-		B33AD35241C6A2C1930EEFF7C38E4FC6 /* RTCEAGLVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCEAGLVideoView.h; path = WebRTC.framework/Headers/RTCEAGLVideoView.h; sourceTree = "<group>"; };
-		B4C0E3E889B53F3DDD684AB868478170 /* RTCPeerConnectionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnectionFactory.h; path = WebRTC.framework/Headers/RTCPeerConnectionFactory.h; sourceTree = "<group>"; };
-		B51BF42E2979D8900049FE3C0B71039E /* RTCVideoCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCapturer.h; path = WebRTC.framework/Headers/RTCVideoCapturer.h; sourceTree = "<group>"; };
-		B5ABABBD0795FD463CFB34C2DC623E46 /* RTCTracing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCTracing.h; path = WebRTC.framework/Headers/RTCTracing.h; sourceTree = "<group>"; };
-		CA652BAED46864903BE7147EEBCDB3A8 /* RTCVideoEncoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP9.h; path = WebRTC.framework/Headers/RTCVideoEncoderVP9.h; sourceTree = "<group>"; };
-		CB4FC6C5AC70B7E75B5BDD45AEBFFC57 /* libWAL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWAL.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CC4ACA2C70F3C12D1CC9E4D71833CA8D /* RTCMediaConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaConstraints.h; path = WebRTC.framework/Headers/RTCMediaConstraints.h; sourceTree = "<group>"; };
-		CD5DAAFF9F96A484F2F96AA6A2D0317E /* Pods-WhaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE46FE16F0F4C6767ECD69051BA7BF86 /* Pods-Whale-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Whale-umbrella.h"; sourceTree = "<group>"; };
-		D0D6AF921F388EFCE6607DA978AA1327 /* RTCDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDispatcher.h; path = WebRTC.framework/Headers/RTCDispatcher.h; sourceTree = "<group>"; };
-		D407D1C19D26A6CD678FFB68BF9F7191 /* RTCLegacyStatsReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCLegacyStatsReport.h; path = WebRTC.framework/Headers/RTCLegacyStatsReport.h; sourceTree = "<group>"; };
-		DB126EF8F0F006E5C8179D41DEBD2C38 /* RTCVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoSource.h; path = WebRTC.framework/Headers/RTCVideoSource.h; sourceTree = "<group>"; };
-		DF633A259FC69D41ED010179D608A31D /* RTCAudioSessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSessionConfiguration.h; path = WebRTC.framework/Headers/RTCAudioSessionConfiguration.h; sourceTree = "<group>"; };
-		E31CC8ED9E9480864ABB141BB4A937A3 /* RTCVideoViewShading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoViewShading.h; path = WebRTC.framework/Headers/RTCVideoViewShading.h; sourceTree = "<group>"; };
-		E34BBB4D9B8473449C188A20500E5B2E /* RTCVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrame.h; path = WebRTC.framework/Headers/RTCVideoFrame.h; sourceTree = "<group>"; };
-		E5BC21E96AEA8955D8A3533F0A4599D2 /* Pods-Whale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Whale.release.xcconfig"; sourceTree = "<group>"; };
-		E6C4A4DC5575EF1FD46405E73E417938 /* RTCMediaStreamTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaStreamTrack.h; path = WebRTC.framework/Headers/RTCMediaStreamTrack.h; sourceTree = "<group>"; };
-		E749EFC778E1A000FDC090E7761501B5 /* RTCDataChannelConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDataChannelConfiguration.h; path = WebRTC.framework/Headers/RTCDataChannelConfiguration.h; sourceTree = "<group>"; };
-		E84C5746F711235B19E4C23A840855A1 /* Pods-WhaleUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleUITests-dummy.m"; sourceTree = "<group>"; };
-		EB2B680B846070E734381B88DC748DD4 /* Pods-WhaleTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleTests-frameworks.sh"; sourceTree = "<group>"; };
-		EF3D89D2D673F6F530BCDE8B4167C51F /* RTCVideoCodecH264.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecH264.h; path = WebRTC.framework/Headers/RTCVideoCodecH264.h; sourceTree = "<group>"; };
-		F730B895259588C07EB0CFD34865B163 /* RTCAudioSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSession.h; path = WebRTC.framework/Headers/RTCAudioSession.h; sourceTree = "<group>"; };
-		F7A6FE77E6D5CE3EC81C885773536489 /* WAL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WAL-dummy.m"; sourceTree = "<group>"; };
-		FD560D54D0A55014F873F5286ECA3CDC /* Pods-Whale-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Whale-frameworks.sh"; sourceTree = "<group>"; };
+		94CABDD3D510A319CECC33EA481694CE /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		959B12B1C61B93A3094AB2F272503BF4 /* SessionDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SessionDescription.swift; sourceTree = "<group>"; };
+		9719303057BE0D7DB0C46BDEEA803E37 /* RTCMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMacros.h; path = WebRTC.framework/Headers/RTCMacros.h; sourceTree = "<group>"; };
+		9856C38341A14804493544D883BEDE79 /* RTCConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCConfiguration.h; path = WebRTC.framework/Headers/RTCConfiguration.h; sourceTree = "<group>"; };
+		9893558BEDEDBB1D82FD5FB2FB090F82 /* RTCSessionDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCSessionDescription.h; path = WebRTC.framework/Headers/RTCSessionDescription.h; sourceTree = "<group>"; };
+		98B534C5002B91159F58BD8ED5FFA01C /* Candidate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		9AFD0DA4FB97F792EF5859DBADDA41BB /* WAL.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WAL.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B6CC195925D280B8BF883854801DBD3 /* Pods-Whale.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Whale.modulemap"; sourceTree = "<group>"; };
+		9CC5C355872FA404119A6FA4F3BC9BBF /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		9E66336EDCE16AAB41B6C58D255A6A62 /* RTCAudioSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSession.h; path = WebRTC.framework/Headers/RTCAudioSession.h; sourceTree = "<group>"; };
+		9F99FC48D28DA41D702815B32C2E969B /* WAL.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WAL.xcconfig; sourceTree = "<group>"; };
+		9FAE0061E1EC8D65499F72E380BEDB62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FDFFF2017E706C4D2A5F2A32D0E8383 /* Pods-Whale-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Whale-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A0EB588506FDCC90C82B9B680BDE4226 /* Pods-WhaleTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhaleTests-dummy.m"; sourceTree = "<group>"; };
+		A2EDDCF1E504983B877D55B17A308FF7 /* Pods-WhaleUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhaleUITests.modulemap"; sourceTree = "<group>"; };
+		AA47F168232E04F49B320CDDDDC0A386 /* Pods-Whale.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Whale.release.xcconfig"; sourceTree = "<group>"; };
+		B32275C388695448184418A7FBCEEAFE /* RTCIceCandidate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIceCandidate.h; path = WebRTC.framework/Headers/RTCIceCandidate.h; sourceTree = "<group>"; };
+		B5D8C52235EBABB200D7D20461844A7D /* RTCLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCLogging.h; path = WebRTC.framework/Headers/RTCLogging.h; sourceTree = "<group>"; };
+		B813E957AB3239DCFE0D56E45EF37FD3 /* RTCIceServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIceServer.h; path = WebRTC.framework/Headers/RTCIceServer.h; sourceTree = "<group>"; };
+		B82851FCF03EC6F855229EF923F87694 /* RTCVideoFrameBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrameBuffer.h; path = WebRTC.framework/Headers/RTCVideoFrameBuffer.h; sourceTree = "<group>"; };
+		BB8FA4220C3012EA58D9ADDC1783A46A /* RTCCameraPreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCCameraPreviewView.h; path = WebRTC.framework/Headers/RTCCameraPreviewView.h; sourceTree = "<group>"; };
+		BCE46EC1CBAC0B9B0922FFF6C0176C22 /* Pods-WhaleUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WhaleUITests-resources.sh"; sourceTree = "<group>"; };
+		BDB32FD8D0EF5ED101C28EB6D6E6C61D /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		BDFC2E551FBC32976D89104DD42B4219 /* RTCDataChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDataChannel.h; path = WebRTC.framework/Headers/RTCDataChannel.h; sourceTree = "<group>"; };
+		BF32A8D63B06FD09E2B5335A31D3E399 /* RTCMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMetrics.h; path = WebRTC.framework/Headers/RTCMetrics.h; sourceTree = "<group>"; };
+		C1ECB235061652CA07B2E2B8B1FE4C3F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2305AD54C4280427E96CDA9DF92B47C /* WebRTCConnection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebRTCConnection.swift; path = WAL/WebRTCConnection.swift; sourceTree = "<group>"; };
+		C5EEDADF45C94B4D2793C261456E0437 /* RTCDataChannelConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDataChannelConfiguration.h; path = WebRTC.framework/Headers/RTCDataChannelConfiguration.h; sourceTree = "<group>"; };
+		C6476981821AE687060715EBA5979EDB /* RTCVideoTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoTrack.h; path = WebRTC.framework/Headers/RTCVideoTrack.h; sourceTree = "<group>"; };
+		C6B1657A135AFDD2AC5EF345A8A45BAC /* Pods_WhaleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C788F759028CF592E31D376D2374AB8B /* RTCVideoDecoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP9.h; path = WebRTC.framework/Headers/RTCVideoDecoderVP9.h; sourceTree = "<group>"; };
+		C9AA835247879BC04E487F66EB615C67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9DE908A23B125E9461C8DA1636BBF4B /* Pods-WhaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDF1C0069CB7DA0893D19936C7808F66 /* RTCVideoViewShading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoViewShading.h; path = WebRTC.framework/Headers/RTCVideoViewShading.h; sourceTree = "<group>"; };
+		D1913191E0410F56D77BD6764F33C81D /* Carrier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Carrier.swift; sourceTree = "<group>"; };
+		D1F007D7073934B7B9E385686661A625 /* RTCVideoCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodec.h; path = WebRTC.framework/Headers/RTCVideoCodec.h; sourceTree = "<group>"; };
+		D5ED4AD3502790CA63B6F066D417F383 /* Pods-Whale-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Whale-frameworks.sh"; sourceTree = "<group>"; };
+		D627F57C59DE13AC37BBDCEE0965AD62 /* WAL-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WAL-dummy.m"; sourceTree = "<group>"; };
+		DB3FB69C79916D778C5D6B721B6541FF /* Pods-WhaleTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC1F257EF4BE19180F3A5FBCD82C1FAB /* RTCVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoSource.h; path = WebRTC.framework/Headers/RTCVideoSource.h; sourceTree = "<group>"; };
+		DE5E426000D2500173DD4AA92F53D895 /* RTCRtpEncodingParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpEncodingParameters.h; path = WebRTC.framework/Headers/RTCRtpEncodingParameters.h; sourceTree = "<group>"; };
+		DEB45D96B6C59C20D970A497C653ADB8 /* Pods-WhaleTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhaleTests.modulemap"; sourceTree = "<group>"; };
+		E312DA8399CD07E3388037EF2CBE9466 /* Pods-WhaleUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhaleUITests-umbrella.h"; sourceTree = "<group>"; };
+		E35BC7A0DD8DF1CDCFB0C02233ECD73C /* RTCMTLVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMTLVideoView.h; path = WebRTC.framework/Headers/RTCMTLVideoView.h; sourceTree = "<group>"; };
+		E51AC427C26567ABBD9EDC2C5FDB9E73 /* RTCRtpSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpSender.h; path = WebRTC.framework/Headers/RTCRtpSender.h; sourceTree = "<group>"; };
+		E5FCF2A31E61D9FE9A165B1D6F0BF99F /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression.swift; sourceTree = "<group>"; };
+		E6A4C7E03C445EDB0CDC48489C199924 /* RTCIntervalRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIntervalRange.h; path = WebRTC.framework/Headers/RTCIntervalRange.h; sourceTree = "<group>"; };
+		E8E2B91C595D14BC570A2F3C91C647A4 /* RTCAVFoundationVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAVFoundationVideoSource.h; path = WebRTC.framework/Headers/RTCAVFoundationVideoSource.h; sourceTree = "<group>"; };
+		E978FF5E5C8AB01BC6C240D0B5FFB42B /* WAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0B430015AE735F878F1636210964E84 /* RTCRtpReceiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpReceiver.h; path = WebRTC.framework/Headers/RTCRtpReceiver.h; sourceTree = "<group>"; };
+		F381D24AB6BADBC0B2D19331DE9FC3C2 /* RTCVideoCodecH264.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecH264.h; path = WebRTC.framework/Headers/RTCVideoCodecH264.h; sourceTree = "<group>"; };
+		F3C9201C8C8E6C9EA737ACFC597ED79E /* Pods_WhaleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D3EA812CB68E7DC11E6F1FD037B707 /* Pods-WhaleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhaleTests.release.xcconfig"; sourceTree = "<group>"; };
+		F938B8AB647F7B6DF61A30200A5C354D /* RTCVideoCodecFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecFactory.h; path = WebRTC.framework/Headers/RTCVideoCodecFactory.h; sourceTree = "<group>"; };
+		F9FA7344C67AB8600D084128C2D6BAC6 /* Pods_Whale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Whale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4C0C51A48B7CD47004001667F82B2F /* Pods-WhaleUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhaleUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FAC500BD75919FF9D4870C84FA6C9FFC /* SSLSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SSLSecurity.swift; path = Sources/SSLSecurity.swift; sourceTree = "<group>"; };
+		FB2B8EFBA16D8A53AC1EC345D264015F /* Pods-WhaleTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhaleTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FD63DA7E73F1057FDBB7A71368051891 /* RTCCameraVideoCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCCameraVideoCapturer.h; path = WebRTC.framework/Headers/RTCCameraVideoCapturer.h; sourceTree = "<group>"; };
+		FF87F5D636EA5E1371A85CD5B05A19E3 /* UIDevice+RTCDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+RTCDevice.h"; path = "WebRTC.framework/Headers/UIDevice+RTCDevice.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4032F76F5565DD60CA589B0BC7AF3AAC /* Frameworks */ = {
+		1D41F6DD33B1DB0F0B9229189ECADCB0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EC8B7BDEBBD5DDC818479FA69EB21DA /* Foundation.framework in Frameworks */,
+				2AD0E6F90062EB4A4C93B231A5EB660E /* Foundation.framework in Frameworks */,
+				C745B4A6C4CB6BA3F8D66109006B42AC /* Starscream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A37420C0D44973CC792B66827FC96D63 /* Frameworks */ = {
+		43D075B1D561A10ABBF6886A5AC09BEB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED81CE32D3C02E5649BCD615EBFD6A8B /* Foundation.framework in Frameworks */,
+				B8DCECB7754AA937983EC1F35DF84608 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0EDEFAA198315E3961BB36B46E970D5 /* Frameworks */ = {
+		6E8377FCCA34CD4518FAE87A68718A41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0FF06C4E24C12CE20D9E6FC48ADF203 /* Foundation.framework in Frameworks */,
+				AA3F87EB2D13413A6D5605DC799DF646 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC522CAAEA489AF89BB78B9D50171E14 /* Frameworks */ = {
+		B3921829E6B6551D7997F87D38C34415 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F0A2C0354F6851BCB3C9E7C13301C58 /* Foundation.framework in Frameworks */,
+				355A5449317B800353966F68CF43ADB3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74B64A600BE6C7350AE4B4F6D2F7CA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A5BAE8220BD458D1356FA4F15E2AD0B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04E8FB0E741CF7EC5016CE33472F5BFA /* Frameworks */ = {
+		091FC3D4129F07BCCD389C8A59E96E9A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2BB3FEB52449F928C29489F1D8210409 /* WebRTC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		06E017BD5362183DFA195CC9955A4EFC /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				83B59043FA7639679962319F623C8D9F /* WebRTC */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		133856B8EE62FE34E29A74B0EA10B083 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F5932302E746FBB4478F76DF86AF705E /* Pods-Whale */,
-				B19CD9FF3C44B09C76FCB4ED28A59DC4 /* Pods-WhaleTests */,
-				2A0A614916D375805F4CB087970E59B0 /* Pods-WhaleUITests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		145DD72E15A9FAC2EE39F30F15BAC02E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				75D37E69B89DFA677E7CC96A87E14957 /* license */,
-				9DD442B28CD959860A149BB532FBA296 /* README.md */,
-				9562DC7976EDB7078281827DCAC352BF /* WAL.podspec */,
+				06895F2EF057DA78165E80FBD8F44E73 /* license */,
+				6B7EB1EBBEE556BCA2E52A09B33D6E82 /* README.md */,
+				9AFD0DA4FB97F792EF5859DBADDA41BB /* WAL.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		2A0A614916D375805F4CB087970E59B0 /* Pods-WhaleUITests */ = {
+		16C7B4A6A562D434A89DA37AE3952061 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				03A12EF4D25780BDA323BA73C5D5A188 /* Pods-WhaleUITests-acknowledgements.markdown */,
-				A4DA1823E1FA1D3AE350010DD7896964 /* Pods-WhaleUITests-acknowledgements.plist */,
-				E84C5746F711235B19E4C23A840855A1 /* Pods-WhaleUITests-dummy.m */,
-				ABA4AC537FE40BBF70FC34589040053C /* Pods-WhaleUITests-frameworks.sh */,
-				7295BA41B55E90701A6C1536D1098A2A /* Pods-WhaleUITests-resources.sh */,
-				68B9D01B780254C4D4017C7D7E23F1D7 /* Pods-WhaleUITests.debug.xcconfig */,
-				96A6EC28DB31518D666B13FEF37D8B30 /* Pods-WhaleUITests.release.xcconfig */,
+				C1ECB235061652CA07B2E2B8B1FE4C3F /* Info.plist */,
+				6CFFF1854589B8AE8830F3C245622B97 /* Starscream.modulemap */,
+				1244314BAFEBE4A75E724480982F6C79 /* Starscream.xcconfig */,
+				BDB32FD8D0EF5ED101C28EB6D6E6C61D /* Starscream-dummy.m */,
+				94CABDD3D510A319CECC33EA481694CE /* Starscream-prefix.pch */,
+				9CC5C355872FA404119A6FA4F3BC9BBF /* Starscream-umbrella.h */,
 			);
-			name = "Pods-WhaleUITests";
-			path = "Target Support Files/Pods-WhaleUITests";
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
 			sourceTree = "<group>";
 		};
-		31DF71F3017525EE57F38683D39E4A1C /* Products */ = {
+		2B93551336F8003AA1A37784ABC0FE87 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AD908017D7ED4935A70848884AE3ECD5 /* libPods-Whale.a */,
-				5FF8432686B61178BFF274528442FC8F /* libPods-WhaleTests.a */,
-				90FBFCC79489AC40BDB175B3EBE07FF9 /* libPods-WhaleUITests.a */,
-				CB4FC6C5AC70B7E75B5BDD45AEBFFC57 /* libWAL.a */,
+				F0BF07A4A5158D7FBCB8147BD76F5E25 /* Starscream */,
+				EDE1DE360637F6D31F49F97A3442CC72 /* WebRTC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		525FA31E5CAD66EA6CC6E200F7F42C82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9FA7344C67AB8600D084128C2D6BAC6 /* Pods_Whale.framework */,
+				C6B1657A135AFDD2AC5EF345A8A45BAC /* Pods_WhaleTests.framework */,
+				F3C9201C8C8E6C9EA737ACFC597ED79E /* Pods_WhaleUITests.framework */,
+				8E66580D70D405782220BB8136CD92D5 /* Starscream.framework */,
+				E978FF5E5C8AB01BC6C240D0B5FFB42B /* WAL.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		521B95DCCEBD429BD818D6A85E192EFA /* Development Pods */ = {
+		655928B9A0B13B950E385080EF78BB35 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				92CBABA9497116600D58AEAE17AE0077 /* WAL */,
+				F5665F5DA7171A0AE8D71056FF0B8DF5 /* Pods-Whale */,
+				CE5F0D4CCB666607AD05C96E2DFEBC97 /* Pods-WhaleTests */,
+				E6F07A641B05C2BCFC6FB7908100E24E /* Pods-WhaleUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		66516FC77F52D51176FF5067F0A78173 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5B220DE9811768A33367A37972807704 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6B4B73382A2BC886FAFD2D14155F574A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BC35A8A8E4FB11A69F07DA33A6C3489 /* WAL */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		6F13259D1BA6AD1CD55A93B5FBA78349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A1C44CD89BA9F8E2475C933236B822F /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		791256B05854012B8D87318939C21A74 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6E6686998091587C7450421AAB3672AA /* RTCCameraVideoCapturer+FormatConstraints.swift */,
+			);
+			name = Utils;
+			path = WAL/Utils;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				521B95DCCEBD429BD818D6A85E192EFA /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				06E017BD5362183DFA195CC9955A4EFC /* Pods */,
-				31DF71F3017525EE57F38683D39E4A1C /* Products */,
-				133856B8EE62FE34E29A74B0EA10B083 /* Targets Support Files */,
+				6B4B73382A2BC886FAFD2D14155F574A /* Development Pods */,
+				C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */,
+				2B93551336F8003AA1A37784ABC0FE87 /* Pods */,
+				525FA31E5CAD66EA6CC6E200F7F42C82 /* Products */,
+				655928B9A0B13B950E385080EF78BB35 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83B59043FA7639679962319F623C8D9F /* WebRTC */ = {
+		9BC35A8A8E4FB11A69F07DA33A6C3489 /* WAL */ = {
 			isa = PBXGroup;
 			children = (
-				F730B895259588C07EB0CFD34865B163 /* RTCAudioSession.h */,
-				DF633A259FC69D41ED010179D608A31D /* RTCAudioSessionConfiguration.h */,
-				73A6DA4EE3B598834086094369EAB88D /* RTCAudioSource.h */,
-				7E9F5B815A2A01656E415CE821219414 /* RTCAudioTrack.h */,
-				07D2D2A19BF4441A48CCF8677A160420 /* RTCAVFoundationVideoSource.h */,
-				4C3B0B666446B0B21A65F15E0ADFE42A /* RTCCameraPreviewView.h */,
-				697DAE059473A673B0ED4807D53CD8BC /* RTCCameraVideoCapturer.h */,
-				8D500E5029E721616094CBEC2BEC9259 /* RTCConfiguration.h */,
-				2AB97BBBA5469E4BF654924BEC49717D /* RTCDataChannel.h */,
-				E749EFC778E1A000FDC090E7761501B5 /* RTCDataChannelConfiguration.h */,
-				D0D6AF921F388EFCE6607DA978AA1327 /* RTCDispatcher.h */,
-				B33AD35241C6A2C1930EEFF7C38E4FC6 /* RTCEAGLVideoView.h */,
-				944D736B0C095C1772E9197FE0AEE9E9 /* RTCFieldTrials.h */,
-				9EEFDC61D0BB9AD760553A92D8CBF91A /* RTCFileLogger.h */,
-				B0C3E9BCFBDD1FB506B7B28452999895 /* RTCIceCandidate.h */,
-				78556D983353D2C0513D1ACF95E222CB /* RTCIceServer.h */,
-				3365AA7A697A4F99C1F80F6A255C8C25 /* RTCIntervalRange.h */,
-				D407D1C19D26A6CD678FFB68BF9F7191 /* RTCLegacyStatsReport.h */,
-				33BD8BE9F3109B855B860BB7DB62FE51 /* RTCLogging.h */,
-				947A0D7C2C10249E55CF93580CCEE137 /* RTCMacros.h */,
-				CC4ACA2C70F3C12D1CC9E4D71833CA8D /* RTCMediaConstraints.h */,
-				4FC1D8392B7AB35F0371203981A7B3BC /* RTCMediaSource.h */,
-				7243EF3A06D23157C2A3F23F6BA4825C /* RTCMediaStream.h */,
-				E6C4A4DC5575EF1FD46405E73E417938 /* RTCMediaStreamTrack.h */,
-				916D68FA3395BAC7C850D6B7FE164AB7 /* RTCMetrics.h */,
-				9DD840A67E7B66AD9E6720F85090C445 /* RTCMetricsSampleInfo.h */,
-				2A59BCFCFED843E14E5447DD4ED81367 /* RTCMTLVideoView.h */,
-				25C591E639DA1BB463A99EB66548A6CF /* RTCPeerConnection.h */,
-				B4C0E3E889B53F3DDD684AB868478170 /* RTCPeerConnectionFactory.h */,
-				19EAE0D2366BFAD6E269E1F61F72F227 /* RTCRtpCodecParameters.h */,
-				1D0E2AE8E3CC1249A48EF669DD966DDE /* RTCRtpEncodingParameters.h */,
-				95168845A6B4E5F068724A4492D53594 /* RTCRtpParameters.h */,
-				B13EB15E0F10FC00CB200C9851A46F86 /* RTCRtpReceiver.h */,
-				01DBF152D187CADECF32806AE46D057C /* RTCRtpSender.h */,
-				0470FDE9FDAC0DA42D767894CFF02A6B /* RTCSessionDescription.h */,
-				42792AB581149F44AAE144B2EC0E410F /* RTCSSLAdapter.h */,
-				B5ABABBD0795FD463CFB34C2DC623E46 /* RTCTracing.h */,
-				B51BF42E2979D8900049FE3C0B71039E /* RTCVideoCapturer.h */,
-				13542098541AFB6C96EC22837DFFADEE /* RTCVideoCodec.h */,
-				3B3F5FB34AF8193FB7AF122D3C4FA4C6 /* RTCVideoCodecFactory.h */,
-				EF3D89D2D673F6F530BCDE8B4167C51F /* RTCVideoCodecH264.h */,
-				4A1B01E36F1D465429F7C22F739EB620 /* RTCVideoDecoderVP8.h */,
-				56D0EB9187D6A9BDF5CDBAD7365A1112 /* RTCVideoDecoderVP9.h */,
-				1C780B384FE40A5E6012BF89857D0DEC /* RTCVideoEncoderVP8.h */,
-				CA652BAED46864903BE7147EEBCDB3A8 /* RTCVideoEncoderVP9.h */,
-				E34BBB4D9B8473449C188A20500E5B2E /* RTCVideoFrame.h */,
-				3E815E1F6863E8E5521E840E2488672D /* RTCVideoFrameBuffer.h */,
-				9FAFDED6866315A4EE1EFFD056AB40FA /* RTCVideoRenderer.h */,
-				DB126EF8F0F006E5C8179D41DEBD2C38 /* RTCVideoSource.h */,
-				5FB837149A84FE0CAF7F1E2D809D8D91 /* RTCVideoTrack.h */,
-				E31CC8ED9E9480864ABB141BB4A937A3 /* RTCVideoViewShading.h */,
-				6E84D435C0615163261E05485B5BB3FC /* UIDevice+RTCDevice.h */,
-				AFD3F97DE22CA6DF2F4D2C59FCA659B1 /* WebRTC.h */,
-				04E8FB0E741CF7EC5016CE33472F5BFA /* Frameworks */,
-			);
-			path = WebRTC;
-			sourceTree = "<group>";
-		};
-		92CBABA9497116600D58AEAE17AE0077 /* WAL */ = {
-			isa = PBXGroup;
-			children = (
-				13B78498AF1F3338BC3024435BA4B390 /* WebRTCConnection.swift */,
-				145DD72E15A9FAC2EE39F30F15BAC02E /* Pod */,
-				F5D2F6306DB4F07193833F58B5BFAF0B /* Support Files */,
+				C2305AD54C4280427E96CDA9DF92B47C /* WebRTCConnection.swift */,
+				AAD7B96540F7D6038F97731425B9A400 /* Entities */,
+				791256B05854012B8D87318939C21A74 /* Utils */,
+				091FC3D4129F07BCCD389C8A59E96E9A /* Pod */,
+				D4BB2351E5A655E805A4C20EF93DCA26 /* Signaling */,
+				EB7829349C51A5AB261CEA5584274A2D /* Support Files */,
 			);
 			name = WAL;
 			path = ../../../lib/WAL;
 			sourceTree = "<group>";
 		};
-		B19CD9FF3C44B09C76FCB4ED28A59DC4 /* Pods-WhaleTests */ = {
+		AAD7B96540F7D6038F97731425B9A400 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				46824387DECE706208E2EBA6CA075DBC /* Pods-WhaleTests-acknowledgements.markdown */,
-				31ACDB135ACCBDD3E9305A20C990BBA0 /* Pods-WhaleTests-acknowledgements.plist */,
-				419DE1D724C73079D8F3C473C35A1C74 /* Pods-WhaleTests-dummy.m */,
-				EB2B680B846070E734381B88DC748DD4 /* Pods-WhaleTests-frameworks.sh */,
-				87E756669D199731FB745DE2FBFC8268 /* Pods-WhaleTests-resources.sh */,
-				6B15B2C42D846CD4BD22F201757085C4 /* Pods-WhaleTests.debug.xcconfig */,
-				CD5DAAFF9F96A484F2F96AA6A2D0317E /* Pods-WhaleTests.release.xcconfig */,
+				98B534C5002B91159F58BD8ED5FFA01C /* Candidate.swift */,
+				D1913191E0410F56D77BD6764F33C81D /* Carrier.swift */,
+				959B12B1C61B93A3094AB2F272503BF4 /* SessionDescription.swift */,
+				0CC1731AB2F0E1AD1A1020A2A923FB18 /* SignalingMessage.swift */,
+				50C7F6341BB411E53A8A9AF8734A776C /* WebRTCConnection+Config+TurnServer.swift */,
+			);
+			name = Entities;
+			path = WAL/Entities;
+			sourceTree = "<group>";
+		};
+		C6C6CF85326A60B112CC4A77BAD281D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F52249DD4D3DD3159B64A42F2E7349B /* Starscream.framework */,
+				66516FC77F52D51176FF5067F0A78173 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5F0D4CCB666607AD05C96E2DFEBC97 /* Pods-WhaleTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FAE0061E1EC8D65499F72E380BEDB62 /* Info.plist */,
+				DEB45D96B6C59C20D970A497C653ADB8 /* Pods-WhaleTests.modulemap */,
+				DB3FB69C79916D778C5D6B721B6541FF /* Pods-WhaleTests-acknowledgements.markdown */,
+				FB2B8EFBA16D8A53AC1EC345D264015F /* Pods-WhaleTests-acknowledgements.plist */,
+				A0EB588506FDCC90C82B9B680BDE4226 /* Pods-WhaleTests-dummy.m */,
+				90B0E8A59DCB4D92A4CB82F018800D58 /* Pods-WhaleTests-frameworks.sh */,
+				3F79E03848F71C1F04C34B938B497904 /* Pods-WhaleTests-resources.sh */,
+				20DD1397A247CB6DEADB7DCE1EDF9E88 /* Pods-WhaleTests-umbrella.h */,
+				C9DE908A23B125E9461C8DA1636BBF4B /* Pods-WhaleTests.debug.xcconfig */,
+				F5D3EA812CB68E7DC11E6F1FD037B707 /* Pods-WhaleTests.release.xcconfig */,
 			);
 			name = "Pods-WhaleTests";
 			path = "Target Support Files/Pods-WhaleTests";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		D4BB2351E5A655E805A4C20EF93DCA26 /* Signaling */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5001ED30DA43CD4EDD152BD55B5BAA25 /* SpreedClient.swift */,
 			);
-			name = Frameworks;
+			name = Signaling;
+			path = WAL/Signaling;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		E6F07A641B05C2BCFC6FB7908100E24E /* Pods-WhaleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				7ABB22956460CB05E524CA2A31ADA1E3 /* Info.plist */,
+				A2EDDCF1E504983B877D55B17A308FF7 /* Pods-WhaleUITests.modulemap */,
+				FA4C0C51A48B7CD47004001667F82B2F /* Pods-WhaleUITests-acknowledgements.markdown */,
+				7DE2A04723205C371C680E4288E4E306 /* Pods-WhaleUITests-acknowledgements.plist */,
+				587D7BEAAB2DDEE1A00E2502243FB771 /* Pods-WhaleUITests-dummy.m */,
+				5BF5F9788238E17009548EC97E675C69 /* Pods-WhaleUITests-frameworks.sh */,
+				BCE46EC1CBAC0B9B0922FFF6C0176C22 /* Pods-WhaleUITests-resources.sh */,
+				E312DA8399CD07E3388037EF2CBE9466 /* Pods-WhaleUITests-umbrella.h */,
+				0244AFDAB37552D973D7CEF86F56F5F9 /* Pods-WhaleUITests.debug.xcconfig */,
+				8925E0D0378957A9CD2316A53E255F4C /* Pods-WhaleUITests.release.xcconfig */,
 			);
-			name = iOS;
+			name = "Pods-WhaleUITests";
+			path = "Target Support Files/Pods-WhaleUITests";
 			sourceTree = "<group>";
 		};
-		F5932302E746FBB4478F76DF86AF705E /* Pods-Whale */ = {
+		EB7829349C51A5AB261CEA5584274A2D /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A28C7A763632B5FC05C5D57F216E199 /* Pods-Whale.modulemap */,
-				35E6840C089C4A8D320D7E992DFDDE95 /* Pods-Whale-acknowledgements.markdown */,
-				A58D34A2928BF7DF47B66D023B550244 /* Pods-Whale-acknowledgements.plist */,
-				1AEAC1B7ECB80F6DBD678A62277C7640 /* Pods-Whale-dummy.m */,
-				FD560D54D0A55014F873F5286ECA3CDC /* Pods-Whale-frameworks.sh */,
-				9871E7FFFBA2D32AF1C7259BDF4FDF1E /* Pods-Whale-resources.sh */,
-				CE46FE16F0F4C6767ECD69051BA7BF86 /* Pods-Whale-umbrella.h */,
-				13C808116E739955C268E17F68C5FDE9 /* Pods-Whale.debug.xcconfig */,
-				E5BC21E96AEA8955D8A3533F0A4599D2 /* Pods-Whale.release.xcconfig */,
-			);
-			name = "Pods-Whale";
-			path = "Target Support Files/Pods-Whale";
-			sourceTree = "<group>";
-		};
-		F5D2F6306DB4F07193833F58B5BFAF0B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B6F796F84BCF6703A36979066C12B72 /* WAL.modulemap */,
-				11249314F9BB991BDD41386E97075988 /* WAL.xcconfig */,
-				F7A6FE77E6D5CE3EC81C885773536489 /* WAL-dummy.m */,
-				27D195022B43A6A087586D2B8A489DE4 /* WAL-prefix.pch */,
-				1139BD1AEBB67624C6C96C216D11B2A6 /* WAL-umbrella.h */,
+				0C7E6B0F255F69667244D6A41B9119DE /* Info.plist */,
+				4DC6CA4B7D3CDBD99C5A6671203A055E /* WAL.modulemap */,
+				9F99FC48D28DA41D702815B32C2E969B /* WAL.xcconfig */,
+				D627F57C59DE13AC37BBDCEE0965AD62 /* WAL-dummy.m */,
+				3FDBD01D4EC9F2A7CE96889E2D0C14AE /* WAL-prefix.pch */,
+				9130FF8E62A9D1558AFA0AD1585C5772 /* WAL-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../../apps/Whale/Pods/Target Support Files/WAL";
 			sourceTree = "<group>";
 		};
+		EDE1DE360637F6D31F49F97A3442CC72 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				9E66336EDCE16AAB41B6C58D255A6A62 /* RTCAudioSession.h */,
+				49E18993D00134328BFDDC25D4B6F7F2 /* RTCAudioSessionConfiguration.h */,
+				4CEA6B702E5178C3E8C7EF16A0C8B3C5 /* RTCAudioSource.h */,
+				13A969810C5F92CE028FAD6D1E0AE9A9 /* RTCAudioTrack.h */,
+				E8E2B91C595D14BC570A2F3C91C647A4 /* RTCAVFoundationVideoSource.h */,
+				BB8FA4220C3012EA58D9ADDC1783A46A /* RTCCameraPreviewView.h */,
+				FD63DA7E73F1057FDBB7A71368051891 /* RTCCameraVideoCapturer.h */,
+				9856C38341A14804493544D883BEDE79 /* RTCConfiguration.h */,
+				BDFC2E551FBC32976D89104DD42B4219 /* RTCDataChannel.h */,
+				C5EEDADF45C94B4D2793C261456E0437 /* RTCDataChannelConfiguration.h */,
+				2DCDF2078C13FF99E7BA2E6E7DA24484 /* RTCDispatcher.h */,
+				838F99F65FD1CF20F76E952A54B3E40C /* RTCEAGLVideoView.h */,
+				851EE4A7C0EA16C31AE051C0294796D1 /* RTCFieldTrials.h */,
+				470404B013782FDE16A2527052821C0D /* RTCFileLogger.h */,
+				B32275C388695448184418A7FBCEEAFE /* RTCIceCandidate.h */,
+				B813E957AB3239DCFE0D56E45EF37FD3 /* RTCIceServer.h */,
+				E6A4C7E03C445EDB0CDC48489C199924 /* RTCIntervalRange.h */,
+				05C0A6148AAD349FFC44DE2A8A558853 /* RTCLegacyStatsReport.h */,
+				B5D8C52235EBABB200D7D20461844A7D /* RTCLogging.h */,
+				9719303057BE0D7DB0C46BDEEA803E37 /* RTCMacros.h */,
+				6B1E8B943C65DAF65C5CD7D3974CD554 /* RTCMediaConstraints.h */,
+				6BE868178F6917893FFAC970C5CABD32 /* RTCMediaSource.h */,
+				0934A349FE1C5AB082B19248E8BBC063 /* RTCMediaStream.h */,
+				5355618F1A2C8364159AD68DAD56E175 /* RTCMediaStreamTrack.h */,
+				BF32A8D63B06FD09E2B5335A31D3E399 /* RTCMetrics.h */,
+				1B862F444E52CA35BEE35AA8836E93E2 /* RTCMetricsSampleInfo.h */,
+				E35BC7A0DD8DF1CDCFB0C02233ECD73C /* RTCMTLVideoView.h */,
+				0EFE3B2B908C1D57274E55421B45FAD4 /* RTCPeerConnection.h */,
+				838D37BA6AD3FE167E0C8905FFF30BFF /* RTCPeerConnectionFactory.h */,
+				8E08BBB5DBCBA98625005D161A098D7C /* RTCRtpCodecParameters.h */,
+				DE5E426000D2500173DD4AA92F53D895 /* RTCRtpEncodingParameters.h */,
+				3FC2860B4E5EE745D768BF5D5211BDD4 /* RTCRtpParameters.h */,
+				F0B430015AE735F878F1636210964E84 /* RTCRtpReceiver.h */,
+				E51AC427C26567ABBD9EDC2C5FDB9E73 /* RTCRtpSender.h */,
+				9893558BEDEDBB1D82FD5FB2FB090F82 /* RTCSessionDescription.h */,
+				7EF084576AE0C9FAEC816B9FDD0C4C48 /* RTCSSLAdapter.h */,
+				212668F75CD92C453E7ED1198591E13B /* RTCTracing.h */,
+				6325EE00C43EDBB838D1CE49767C8CA0 /* RTCVideoCapturer.h */,
+				D1F007D7073934B7B9E385686661A625 /* RTCVideoCodec.h */,
+				F938B8AB647F7B6DF61A30200A5C354D /* RTCVideoCodecFactory.h */,
+				F381D24AB6BADBC0B2D19331DE9FC3C2 /* RTCVideoCodecH264.h */,
+				798A963327214EA349629275F2C2DCD0 /* RTCVideoDecoderVP8.h */,
+				C788F759028CF592E31D376D2374AB8B /* RTCVideoDecoderVP9.h */,
+				1A37FCD9457187830489B4EFC93BF80E /* RTCVideoEncoderVP8.h */,
+				0056665405DEBAE1E58607A6D972A8F8 /* RTCVideoEncoderVP9.h */,
+				79402F7290972166BC65F9D774C9B005 /* RTCVideoFrame.h */,
+				B82851FCF03EC6F855229EF923F87694 /* RTCVideoFrameBuffer.h */,
+				55D7FA1BF7C6AD519EB6FFC10EC6FA5B /* RTCVideoRenderer.h */,
+				DC1F257EF4BE19180F3A5FBCD82C1FAB /* RTCVideoSource.h */,
+				C6476981821AE687060715EBA5979EDB /* RTCVideoTrack.h */,
+				CDF1C0069CB7DA0893D19936C7808F66 /* RTCVideoViewShading.h */,
+				FF87F5D636EA5E1371A85CD5B05A19E3 /* UIDevice+RTCDevice.h */,
+				4D73C95EBA0DA15DA90A83B23D9BCB81 /* WebRTC.h */,
+				6F13259D1BA6AD1CD55A93B5FBA78349 /* Frameworks */,
+			);
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		F0BF07A4A5158D7FBCB8147BD76F5E25 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				E5FCF2A31E61D9FE9A165B1D6F0BF99F /* Compression.swift */,
+				FAC500BD75919FF9D4870C84FA6C9FFC /* SSLSecurity.swift */,
+				29DBB38A1711D4C0AD9C053212297763 /* WebSocket.swift */,
+				16C7B4A6A562D434A89DA37AE3952061 /* Support Files */,
+			);
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		F5665F5DA7171A0AE8D71056FF0B8DF5 /* Pods-Whale */ = {
+			isa = PBXGroup;
+			children = (
+				C9AA835247879BC04E487F66EB615C67 /* Info.plist */,
+				9B6CC195925D280B8BF883854801DBD3 /* Pods-Whale.modulemap */,
+				9FDFFF2017E706C4D2A5F2A32D0E8383 /* Pods-Whale-acknowledgements.markdown */,
+				52FC1D1F4AC65B4CF8A474EDD1C1D563 /* Pods-Whale-acknowledgements.plist */,
+				6F1B70D4C9BC724A2E502FC728B95338 /* Pods-Whale-dummy.m */,
+				D5ED4AD3502790CA63B6F066D417F383 /* Pods-Whale-frameworks.sh */,
+				13B98BBB6CDEEDE58BAEBBE83C709882 /* Pods-Whale-resources.sh */,
+				00F0395D1AFEDBB684FA5FEB0EDD784F /* Pods-Whale-umbrella.h */,
+				676823DB33045599A8DD2030FBB9BD68 /* Pods-Whale.debug.xcconfig */,
+				AA47F168232E04F49B320CDDDDC0A386 /* Pods-Whale.release.xcconfig */,
+			);
+			name = "Pods-Whale";
+			path = "Target Support Files/Pods-Whale";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		279F0982280943ABE0D82AE9933CED6B /* Headers */ = {
+		10A7D7BCFA84BC19565E33425EBC391D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC2282845D26EE35BBF6F24FB8364A09 /* WAL-umbrella.h in Headers */,
+				3AD10B49EC7913F344BC60B5F9FC8A56 /* Starscream-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AE524CB935D3D163524C6CC53DF2E09 /* Headers */ = {
+		5D035AAB3AA62DEA5CC02D2EE0E6F918 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEE406E593DAFF3B7DEC72C57D933C2 /* Pods-Whale-umbrella.h in Headers */,
+				144052E383527380956D5C03434E06A8 /* Pods-Whale-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67A84FC2717AC88FD9D7E8EB2F6BF133 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965A61BE268DA05BADC7379A4E966C79 /* Pods-WhaleUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA386D7ACD6C3A42DC640E5C94589A51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7434E3C24EF10DAF1739D1B93A8D9763 /* WAL-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD78C17C7D59F1000D2E47A6559B811B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA87BAA856D19CE718B6BE8DD46AF08A /* Pods-WhaleTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		22225B26F0E8D3D82884DC099AF9C5DA /* Pods-WhaleUITests */ = {
+		4D8C8F0DC325A7405A98081AA4814CBD /* Pods-Whale */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 97F04422FA93219DD4A26E1BD882540B /* Build configuration list for PBXNativeTarget "Pods-WhaleUITests" */;
+			buildConfigurationList = 881AFBB5F79C87C60FFA9DD244151C39 /* Build configuration list for PBXNativeTarget "Pods-Whale" */;
 			buildPhases = (
-				103051714096B36B49DBC09CA37411FF /* Sources */,
-				A37420C0D44973CC792B66827FC96D63 /* Frameworks */,
+				124E289C591F558472A1F4E874D780DC /* Sources */,
+				B3921829E6B6551D7997F87D38C34415 /* Frameworks */,
+				5D035AAB3AA62DEA5CC02D2EE0E6F918 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D7E70554776A42E4A7664C940A88A8F1 /* PBXTargetDependency */,
-			);
-			name = "Pods-WhaleUITests";
-			productName = "Pods-WhaleUITests";
-			productReference = 90FBFCC79489AC40BDB175B3EBE07FF9 /* libPods-WhaleUITests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8E788B66E08030A0AD16271A5F3EBF0F /* WAL */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FC08D6E14C4FEC0AE2B8DE3F7DB121BF /* Build configuration list for PBXNativeTarget "WAL" */;
-			buildPhases = (
-				6CD082C9D49314C0D50C6A1DF487C4E8 /* Sources */,
-				4032F76F5565DD60CA589B0BC7AF3AAC /* Frameworks */,
-				279F0982280943ABE0D82AE9933CED6B /* Headers */,
-				A3BF1F4C2F277C923C81ADCF0A4F7D5C /* Copy generated compatibility header */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WAL;
-			productName = WAL;
-			productReference = CB4FC6C5AC70B7E75B5BDD45AEBFFC57 /* libWAL.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8EBE9FABD72D908961C4ECE4240F015F /* Pods-WhaleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2376ADEE0EBB22507D09FDEBF8603DE3 /* Build configuration list for PBXNativeTarget "Pods-WhaleTests" */;
-			buildPhases = (
-				6067ABEEC95C1B1CD2933507B2DECD41 /* Sources */,
-				DC522CAAEA489AF89BB78B9D50171E14 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6FED6353399B8F3CF541CFAB0A3C76CC /* PBXTargetDependency */,
-			);
-			name = "Pods-WhaleTests";
-			productName = "Pods-WhaleTests";
-			productReference = 5FF8432686B61178BFF274528442FC8F /* libPods-WhaleTests.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		F89315AE26AA4575AF4C1BB59FE69E42 /* Pods-Whale */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6A14CB77C7A020262080B3C7537DA87B /* Build configuration list for PBXNativeTarget "Pods-Whale" */;
-			buildPhases = (
-				86EE9D199E57FCFCE971B28DF5906353 /* Sources */,
-				C0EDEFAA198315E3961BB36B46E970D5 /* Frameworks */,
-				7AE524CB935D3D163524C6CC53DF2E09 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5F17E8309427214DBC5FAFFF297C2C67 /* PBXTargetDependency */,
+				E8C7F5F00060E5D35E0E2631B66850E6 /* PBXTargetDependency */,
+				A43885181EF11652FC3D5B6B157FCB61 /* PBXTargetDependency */,
 			);
 			name = "Pods-Whale";
 			productName = "Pods-Whale";
-			productReference = AD908017D7ED4935A70848884AE3ECD5 /* libPods-Whale.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = F9FA7344C67AB8600D084128C2D6BAC6 /* Pods_Whale.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D41DA1A1DC80B76D649CAD15030B93D /* Pods-WhaleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B412C93A3AC81722BDF5D6135BD3908 /* Build configuration list for PBXNativeTarget "Pods-WhaleTests" */;
+			buildPhases = (
+				993D6C255E91614BFB9E7BEC1931052A /* Sources */,
+				6E8377FCCA34CD4518FAE87A68718A41 /* Frameworks */,
+				FD78C17C7D59F1000D2E47A6559B811B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BD10DF7BECDD5A2044D6BE83D519700 /* PBXTargetDependency */,
+			);
+			name = "Pods-WhaleTests";
+			productName = "Pods-WhaleTests";
+			productReference = C6B1657A135AFDD2AC5EF345A8A45BAC /* Pods_WhaleTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		81918F67A1156AF62BC2ECBC27A415A7 /* WAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E747697BE69DEB18C509582079EC6E17 /* Build configuration list for PBXNativeTarget "WAL" */;
+			buildPhases = (
+				98F5D3DAFFA832501549E404C337EF17 /* Sources */,
+				1D41F6DD33B1DB0F0B9229189ECADCB0 /* Frameworks */,
+				AA386D7ACD6C3A42DC640E5C94589A51 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECEA8381F13CE58F286CEC0F54BE8C34 /* PBXTargetDependency */,
+			);
+			name = WAL;
+			productName = WAL;
+			productReference = E978FF5E5C8AB01BC6C240D0B5FFB42B /* WAL.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E74A543C69EEF6D6115F2AEBDC5BAD15 /* Pods-WhaleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7626ACB903D1129885440742081A22FE /* Build configuration list for PBXNativeTarget "Pods-WhaleUITests" */;
+			buildPhases = (
+				CF76B950CBCE1454FA572CD962C1C3F2 /* Sources */,
+				D74B64A600BE6C7350AE4B4F6D2F7CA9 /* Frameworks */,
+				67A84FC2717AC88FD9D7E8EB2F6BF133 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C860D942EA45F9831DBC2DF1927A2CD8 /* PBXTargetDependency */,
+			);
+			name = "Pods-WhaleUITests";
+			productName = "Pods-WhaleUITests";
+			productReference = F3C9201C8C8E6C9EA737ACFC597ED79E /* Pods_WhaleUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F17FB0E7163CFAB8509A02E4552C4B36 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E7C3F911FEA18DC070E20E4B99BA5D /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				B150890B0C5081DF8299D0348F8F93CB /* Sources */,
+				43D075B1D561A10ABBF6886A5AC09BEB /* Frameworks */,
+				10A7D7BCFA84BC19565E33425EBC391D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 8E66580D70D405782220BB8136CD92D5 /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -490,6 +669,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					4D8C8F0DC325A7405A98081AA4814CBD = {
+						LastSwiftMigration = 0940;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -499,169 +683,107 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 31DF71F3017525EE57F38683D39E4A1C /* Products */;
+			productRefGroup = 525FA31E5CAD66EA6CC6E200F7F42C82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F89315AE26AA4575AF4C1BB59FE69E42 /* Pods-Whale */,
-				8EBE9FABD72D908961C4ECE4240F015F /* Pods-WhaleTests */,
-				22225B26F0E8D3D82884DC099AF9C5DA /* Pods-WhaleUITests */,
-				8E788B66E08030A0AD16271A5F3EBF0F /* WAL */,
+				4D8C8F0DC325A7405A98081AA4814CBD /* Pods-Whale */,
+				7D41DA1A1DC80B76D649CAD15030B93D /* Pods-WhaleTests */,
+				E74A543C69EEF6D6115F2AEBDC5BAD15 /* Pods-WhaleUITests */,
+				F17FB0E7163CFAB8509A02E4552C4B36 /* Starscream */,
+				81918F67A1156AF62BC2ECBC27A415A7 /* WAL */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A3BF1F4C2F277C923C81ADCF0A4F7D5C /* Copy generated compatibility header */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
-				"${PODS_ROOT}/Headers/Public/WAL/WAL.modulemap",
-				"${PODS_ROOT}/Headers/Public/WAL/WAL-umbrella.h",
-			);
-			name = "Copy generated compatibility header";
-			outputPaths = (
-				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
-				"${BUILT_PRODUCTS_DIR}/WAL-umbrella.h",
-				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/WAL/WAL.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/WAL/WAL-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		103051714096B36B49DBC09CA37411FF /* Sources */ = {
+		124E289C591F558472A1F4E874D780DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BAA7822D23A215E5DECF9B64901F705 /* Pods-WhaleUITests-dummy.m in Sources */,
+				F687E1D4FF314797B076E3D6B69DD1BF /* Pods-Whale-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6067ABEEC95C1B1CD2933507B2DECD41 /* Sources */ = {
+		98F5D3DAFFA832501549E404C337EF17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65BE86D4EE254D35DA386B7CE6DACB1F /* Pods-WhaleTests-dummy.m in Sources */,
+				1B2E5A8ADF6D8041D1A577496681481A /* Candidate.swift in Sources */,
+				8FD651832145DF8621611140CCC151C5 /* Carrier.swift in Sources */,
+				13BE5B5DC035CA0173326892AD378E37 /* RTCCameraVideoCapturer+FormatConstraints.swift in Sources */,
+				139D231712B1EDDA6C7CA6241B00C441 /* SessionDescription.swift in Sources */,
+				9233A1BC0D0238B3C9847716395E891D /* SignalingMessage.swift in Sources */,
+				527367C0D02CC0047A41A0A32C803115 /* SpreedClient.swift in Sources */,
+				DE3C25600F92241D1E7B5CA509983D05 /* WAL-dummy.m in Sources */,
+				F5850C3A8933C6FEAE828C758FB0EE0D /* WebRTCConnection+Config+TurnServer.swift in Sources */,
+				FEB8BFA5A7E9D0426D4DB2B6F93A0D18 /* WebRTCConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6CD082C9D49314C0D50C6A1DF487C4E8 /* Sources */ = {
+		993D6C255E91614BFB9E7BEC1931052A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67AA0767F5CD3B7D326510B55BABA901 /* WAL-dummy.m in Sources */,
-				AD04C50E607B5BC6FA8DA6E863B6E02D /* WebRTCConnection.swift in Sources */,
+				D799D08450A5A474D156C893418BAB32 /* Pods-WhaleTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		86EE9D199E57FCFCE971B28DF5906353 /* Sources */ = {
+		B150890B0C5081DF8299D0348F8F93CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D01EF6317DB175981D8D4F32C7328747 /* Pods-Whale-dummy.m in Sources */,
+				5F4704BF645026523CB3E5F1DD913E19 /* Compression.swift in Sources */,
+				3001651F44E1BC32A85726AFE203F9F3 /* SSLSecurity.swift in Sources */,
+				39092E50DCDCA25A2C6662075F8E525E /* Starscream-dummy.m in Sources */,
+				44842719F75F98515789A7C39C8ABE4B /* WebSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76B950CBCE1454FA572CD962C1C3F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5C8A73CB5E76B5FC67B7EF04B523409 /* Pods-WhaleUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5F17E8309427214DBC5FAFFF297C2C67 /* PBXTargetDependency */ = {
+		3BD10DF7BECDD5A2044D6BE83D519700 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Whale";
+			target = 4D8C8F0DC325A7405A98081AA4814CBD /* Pods-Whale */;
+			targetProxy = 3435B927E10CD913DBC1DD91E94F1A74 /* PBXContainerItemProxy */;
+		};
+		A43885181EF11652FC3D5B6B157FCB61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = WAL;
-			target = 8E788B66E08030A0AD16271A5F3EBF0F /* WAL */;
-			targetProxy = 3AF254737A049E9071CA05B5A201F050 /* PBXContainerItemProxy */;
+			target = 81918F67A1156AF62BC2ECBC27A415A7 /* WAL */;
+			targetProxy = D164A8EE1F51EED20DA1C34438EF6346 /* PBXContainerItemProxy */;
 		};
-		6FED6353399B8F3CF541CFAB0A3C76CC /* PBXTargetDependency */ = {
+		C860D942EA45F9831DBC2DF1927A2CD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-Whale";
-			target = F89315AE26AA4575AF4C1BB59FE69E42 /* Pods-Whale */;
-			targetProxy = CE144D7E63B35F8D5694E1F54400DA27 /* PBXContainerItemProxy */;
+			target = 4D8C8F0DC325A7405A98081AA4814CBD /* Pods-Whale */;
+			targetProxy = F4AA82F3B58A0A38106EC56B124594CD /* PBXContainerItemProxy */;
 		};
-		D7E70554776A42E4A7664C940A88A8F1 /* PBXTargetDependency */ = {
+		E8C7F5F00060E5D35E0E2631B66850E6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Whale";
-			target = F89315AE26AA4575AF4C1BB59FE69E42 /* Pods-Whale */;
-			targetProxy = 99CEBA2649C51FFF79AAF8B17FF2CE8B /* PBXContainerItemProxy */;
+			name = Starscream;
+			target = F17FB0E7163CFAB8509A02E4552C4B36 /* Starscream */;
+			targetProxy = 1AE4418B4F4B46EA699F3135678683BE /* PBXContainerItemProxy */;
+		};
+		ECEA8381F13CE58F286CEC0F54BE8C34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = F17FB0E7163CFAB8509A02E4552C4B36 /* Starscream */;
+			targetProxy = BAAFC6B649421BFEECAC28C134B1F182 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0DBD59742A38CF7B5E5BE217369AB150 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD5DAAFF9F96A484F2F96AA6A2D0317E /* Pods-WhaleTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		1EC52CB1C6527198C7DE5F5F34CF636A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E5BC21E96AEA8955D8A3533F0A4599D2 /* Pods-Whale.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Whale/Pods-Whale.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4E5B7ACCF88D54ADB534BB68E8E09509 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B15B2C42D846CD4BD22F201757085C4 /* Pods-WhaleTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -725,28 +847,6 @@
 			};
 			name = Debug;
 		};
-		57BF1004FF80D5DE063527E4C0BBD0A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B9D01B780254C4D4017C7D7E23F1D7 /* Pods-WhaleUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -805,101 +905,271 @@
 			};
 			name = Release;
 		};
-		9873EA7DE970D47DD56C858DA65A5F6C /* Debug */ = {
+		594AE00346EC5D782EF29C1C30AC28A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13C808116E739955C268E17F68C5FDE9 /* Pods-Whale.debug.xcconfig */;
+			baseConfigurationReference = 0244AFDAB37552D973D7CEF86F56F5F9 /* Pods-WhaleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhaleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7746CA1EBF5677495E997F563AB4E803 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676823DB33045599A8DD2030FBB9BD68 /* Pods-Whale.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Whale/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Whale/Pods-Whale.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		9C84B347DB20EF0708B99BF6CEEC297E /* Debug */ = {
+		7A4BD8B090837D1AF2D678C5450F315A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11249314F9BB991BDD41386E97075988 /* WAL.xcconfig */;
+			baseConfigurationReference = AA47F168232E04F49B320CDDDDC0A386 /* Pods-Whale.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_BITCODE = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/WAL/WAL-prefix.pch";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Whale/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = Headers/Public/WAL/WAL.modulemap;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Whale/Pods-Whale.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		83FDB1EF726F2BE8753F7F67032CF1E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F99FC48D28DA41D702815B32C2E969B /* WAL.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WAL/WAL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WAL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WAL/WAL.modulemap";
 				PRODUCT_MODULE_NAME = WAL;
 				PRODUCT_NAME = WAL;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D0F36B7F77D9E40D9B255CB22A2CA7C3 /* Release */ = {
+		85FE97F7763A33383444CF74093D61EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96A6EC28DB31518D666B13FEF37D8B30 /* Pods-WhaleUITests.release.xcconfig */;
+			baseConfigurationReference = 1244314BAFEBE4A75E724480982F6C79 /* Starscream.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B50D829DBF8FF4DDEFCE51BBC903B38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1244314BAFEBE4A75E724480982F6C79 /* Starscream.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6F637BED3445956DB12505EC241253D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8925E0D0378957A9CD2316A53E255F4C /* Pods-WhaleUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhaleUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		FA27FAB82375433B6A35F462410899C4 /* Release */ = {
+		D7921D028B0535AEB204D9F3A8F98C32 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 11249314F9BB991BDD41386E97075988 /* WAL.xcconfig */;
+			baseConfigurationReference = 9F99FC48D28DA41D702815B32C2E969B /* WAL.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				ENABLE_BITCODE = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/WAL/WAL-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WAL/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MODULEMAP_FILE = Headers/Public/WAL/WAL.modulemap;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WAL/WAL.modulemap";
 				PRODUCT_MODULE_NAME = WAL;
 				PRODUCT_NAME = WAL;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -907,17 +1177,88 @@
 				SWIFT_VERSION = 4.1;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		DE86DC4162F790D57D084BB4949174EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D3EA812CB68E7DC11E6F1FD037B707 /* Pods-WhaleTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhaleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhaleTests/Pods-WhaleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F96BCD04191CB52BC7CA0BD50566BBC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9DE908A23B125E9461C8DA1636BBF4B /* Pods-WhaleTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WhaleTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhaleTests/Pods-WhaleTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2376ADEE0EBB22507D09FDEBF8603DE3 /* Build configuration list for PBXNativeTarget "Pods-WhaleTests" */ = {
+		05E7C3F911FEA18DC070E20E4B99BA5D /* Build configuration list for PBXNativeTarget "Starscream" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4E5B7ACCF88D54ADB534BB68E8E09509 /* Debug */,
-				0DBD59742A38CF7B5E5BE217369AB150 /* Release */,
+				85FE97F7763A33383444CF74093D61EB /* Debug */,
+				B50D829DBF8FF4DDEFCE51BBC903B38D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -931,29 +1272,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A14CB77C7A020262080B3C7537DA87B /* Build configuration list for PBXNativeTarget "Pods-Whale" */ = {
+		3B412C93A3AC81722BDF5D6135BD3908 /* Build configuration list for PBXNativeTarget "Pods-WhaleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9873EA7DE970D47DD56C858DA65A5F6C /* Debug */,
-				1EC52CB1C6527198C7DE5F5F34CF636A /* Release */,
+				F96BCD04191CB52BC7CA0BD50566BBC2 /* Debug */,
+				DE86DC4162F790D57D084BB4949174EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		97F04422FA93219DD4A26E1BD882540B /* Build configuration list for PBXNativeTarget "Pods-WhaleUITests" */ = {
+		7626ACB903D1129885440742081A22FE /* Build configuration list for PBXNativeTarget "Pods-WhaleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				57BF1004FF80D5DE063527E4C0BBD0A2 /* Debug */,
-				D0F36B7F77D9E40D9B255CB22A2CA7C3 /* Release */,
+				594AE00346EC5D782EF29C1C30AC28A0 /* Debug */,
+				B6F637BED3445956DB12505EC241253D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC08D6E14C4FEC0AE2B8DE3F7DB121BF /* Build configuration list for PBXNativeTarget "WAL" */ = {
+		881AFBB5F79C87C60FFA9DD244151C39 /* Build configuration list for PBXNativeTarget "Pods-Whale" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9C84B347DB20EF0708B99BF6CEEC297E /* Debug */,
-				FA27FAB82375433B6A35F462410899C4 /* Release */,
+				7746CA1EBF5677495E997F563AB4E803 /* Debug */,
+				7A4BD8B090837D1AF2D678C5450F315A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E747697BE69DEB18C509582079EC6E17 /* Build configuration list for PBXNativeTarget "WAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83FDB1EF726F2BE8753F7F67032CF1E2 /* Debug */,
+				D7921D028B0535AEB204D9F3A8F98C32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

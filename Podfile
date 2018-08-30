@@ -1,7 +1,7 @@
 platform :ios, '10.0'
 
 target 'Whale' do
-    # use_frameworks!
+  use_frameworks!
 
   # Pods for Whale
   pod 'WAL', :path => '../../lib/WAL'

@@ -1,4 +1,4 @@
-module Pods_Whale {
+framework module Pods_Whale {
   umbrella header "Pods-Whale-umbrella.h"
 
   export *

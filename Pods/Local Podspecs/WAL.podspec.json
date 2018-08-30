@@ -10,6 +10,9 @@
   "authors": {
     "Christian Braun": "christian.braun@kurzdigital.com"
   },
+  "xcconfig": {
+    "ENABLE_BITCODE": "NO"
+  },
   "social_media_url": "http://twitter.com/NorbiBraun",
   "platforms": {
     "ios": "10.0"
@@ -18,11 +21,14 @@
     "git": "https://git.kurzdigital.com/cbr/WAL",
     "tag": "0.0.1"
   },
-  "source_files": "WAL",
+  "source_files": "WAL/**/*",
   "requires_arc": true,
   "swift_version": "4.1",
   "dependencies": {
     "WebRTC": [
+      "~> 63.11"
+    ],
+    "Starscream": [
 
     ]
   }

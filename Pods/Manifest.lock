@@ -1,6 +1,8 @@
 PODS:
+  - Starscream (3.0.5)
   - WAL (0.0.1):
-    - WebRTC
+    - Starscream
+    - WebRTC (~> 63.11)
   - WebRTC (63.11.20455)
 
 DEPENDENCIES:
@@ -8,6 +10,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Starscream
     - WebRTC
 
 EXTERNAL SOURCES:
@@ -15,9 +18,10 @@ EXTERNAL SOURCES:
     :path: "../../lib/WAL"
 
 SPEC CHECKSUMS:
-  WAL: 3f76671b9de4df059816eb510d71940a3661e0df
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  WAL: 0d546ee508c1a0345f1b8439e93cd8fcf2a40be7
   WebRTC: f2a6203584745fe53532633397557876b5d71640
 
-PODFILE CHECKSUM: 81839a90937bd2efe127140ed7099fb126456992
+PODFILE CHECKSUM: 88ef30e304a2cf79e1df53bcb58ea487cd57ddb7
 
 COCOAPODS: 1.5.3
