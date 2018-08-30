@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +15,53 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Whale" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8V9-F9-Aad" customClass="RTCEAGLVideoView">
+                                <rect key="frame" x="-62.5" y="20" width="500" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8V9-F9-Aad" secondAttribute="height" multiplier="4:3" id="WAO-KV-BsG"/>
+                                    <constraint firstAttribute="width" secondItem="8V9-F9-Aad" secondAttribute="height" multiplier="3:4" id="rjk-7j-SFp"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WAO-KV-BsG"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="TopLeft" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-Le-Hc7" customClass="RTCCameraPreviewView">
+                                <rect key="frame" x="205" y="40" width="150" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IQ9-Le-Hc7" secondAttribute="height" multiplier="3:4" id="DBZ-ER-noB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IQ9-Le-Hc7" secondAttribute="trailing" constant="20" id="GKj-TJ-gGO"/>
+                            <constraint firstItem="8V9-F9-Aad" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KjQ-BK-VWo"/>
+                            <constraint firstItem="8V9-F9-Aad" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="TFY-uF-LQ5"/>
+                            <constraint firstItem="8V9-F9-Aad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r3v-sL-3zd"/>
+                            <constraint firstItem="IQ9-Le-Hc7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="rbJ-A4-tM0"/>
+                            <constraint firstItem="IQ9-Le-Hc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ufp-yN-WTa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="landscapeRemoteVideoAspectRatioConstraint" destination="WAO-KV-BsG" id="N56-r1-79J"/>
+                        <outlet property="localVideoView" destination="IQ9-Le-Hc7" id="wjd-jm-xI8"/>
+                        <outlet property="portraitRemoteVideoAspectRatioConstraint" destination="rjk-7j-SFp" id="I2t-CA-lo6"/>
+                        <outlet property="remoteVideoView" destination="8V9-F9-Aad" id="0Gm-Ow-AyN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="103.89805097451276"/>
         </scene>
     </scenes>
 </document>
