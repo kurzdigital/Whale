@@ -40,12 +40,46 @@
                                     <constraint firstAttribute="width" secondItem="IQ9-Le-Hc7" secondAttribute="height" multiplier="3:4" id="DBZ-ER-noB"/>
                                 </constraints>
                             </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nfO-VU-KBp">
+                                <rect key="frame" x="0.0" y="500.5" width="375" height="166.5"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jbu-HA-VIN">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="166.5"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xi4-zp-bnV">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="usw-dm-IhZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </view>
+                                            <vibrancyEffect>
+                                                <blurEffect style="light"/>
+                                            </vibrancyEffect>
+                                        </visualEffectView>
+                                    </subviews>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKF-wy-wa7">
+                                <rect key="frame" x="161" y="569" width="52" height="30"/>
+                                <state key="normal" title="hangup"/>
+                                <connections>
+                                    <action selector="hangupButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XXR-qv-lDt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IQ9-Le-Hc7" secondAttribute="trailing" constant="20" id="GKj-TJ-gGO"/>
+                            <constraint firstItem="nfO-VU-KBp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HH3-If-OHp"/>
                             <constraint firstItem="8V9-F9-Aad" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KjQ-BK-VWo"/>
                             <constraint firstItem="8V9-F9-Aad" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="TFY-uF-LQ5"/>
+                            <constraint firstAttribute="bottom" secondItem="nfO-VU-KBp" secondAttribute="bottom" id="WXD-tY-He0"/>
+                            <constraint firstAttribute="trailing" secondItem="nfO-VU-KBp" secondAttribute="trailing" id="YZr-0s-NhY"/>
+                            <constraint firstItem="AKF-wy-wa7" firstAttribute="centerY" secondItem="nfO-VU-KBp" secondAttribute="centerY" id="bjX-wC-mYQ"/>
+                            <constraint firstItem="nfO-VU-KBp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="eMW-Xh-gtb"/>
+                            <constraint firstItem="AKF-wy-wa7" firstAttribute="centerX" secondItem="nfO-VU-KBp" secondAttribute="centerX" id="kpQ-5t-BjH"/>
                             <constraint firstItem="8V9-F9-Aad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="r3v-sL-3zd"/>
                             <constraint firstItem="IQ9-Le-Hc7" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="rbJ-A4-tM0"/>
                             <constraint firstItem="IQ9-Le-Hc7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ufp-yN-WTa"/>

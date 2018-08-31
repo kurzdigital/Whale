@@ -28,9 +28,6 @@ class ViewController: UIViewController {
                                              turnServer: nil,
                                              stunServerUrl: nil,
                                              formatConstraints: formatConstraints)
-//        let config = WebRTCConnection.Config(signalingServerUrl: "ws://10.199.1.147:8080/ws",
-//                                             turnServer: nil,
-//                                             stunServerUrl: nil)
         connection = WebRTCConnection(with: config, delegate: self)
         connection?.connect(roomName: "Test")
         remoteVideoView.delegate = self
@@ -38,23 +35,25 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { _ in
-            self.connection?.send(data: "Hallo nur ein Test".data(using: .utf8)!)
-        }
     }
 
-    override var shouldAutorotate: Bool {
-        return false
-    }
+    // MARK: - Actions
 
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .portrait
+    @IBAction func hangupButtonTouched(_ sender: UIButton) {
+        connection?.disconnect()
     }
 }
 
 extension ViewController: WebRTCConnectionDelegate {
     // MARK: WebRTCConnectionDelegate
+
+    func didDisconnect(_ sender: WebRTCConnection) {
+        print("DidDisconnect")
+    }
+
+    func didOpenDataChannel(_ sender: WebRTCConnection) {
+        print("DidOpenDataChannel")
+    }
 
     func webRTCConnection(_ sender: WebRTCConnection, didReceiveLocalCapturer localCapturer: RTCCameraVideoCapturer) {
         localVideoView.captureSession = localCapturer.captureSession
@@ -67,6 +66,7 @@ extension ViewController: WebRTCConnectionDelegate {
 
 extension ViewController: RTCEAGLVideoViewDelegate {
     func videoView(_ videoView: RTCEAGLVideoView, didChangeVideoSize size: CGSize) {
+        print(size)
         if size.height > size.width {
             landscapeRemoteVideoAspectRatioConstraint.isActive = false
             portraitRemoteVideoAspectRatioConstraint.isActive = true
@@ -76,4 +76,3 @@ extension ViewController: RTCEAGLVideoViewDelegate {
         }
     }
 }
-
