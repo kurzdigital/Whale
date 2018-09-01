@@ -17,7 +17,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var portraitRemoteVideoAspectRatioConstraint: NSLayoutConstraint!
     @IBOutlet weak var landscapeRemoteVideoAspectRatioConstraint: NSLayoutConstraint!
-    var connection: WebRTCConnection?
+
+    fileprivate var connection: WebRTCConnection?
+    // Only set when called
+    fileprivate var callerId: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +32,7 @@ class ViewController: UIViewController {
                                              stunServerUrl: nil,
                                              formatConstraints: formatConstraints)
         connection = WebRTCConnection(with: config, delegate: self)
-        connection?.connect(roomName: "Test")
+        connection?.join(roomName: "Test")
         remoteVideoView.delegate = self
     }
 
@@ -40,12 +43,25 @@ class ViewController: UIViewController {
     // MARK: - Actions
 
     @IBAction func hangupButtonTouched(_ sender: UIButton) {
-        connection?.disconnect()
+        if connection?.state == .connectedWithPartner {
+            connection?.disconnect()
+        } else {
+            guard let callerId = callerId else {
+                return
+            }
+            connection?.answerIncomingCall(userId: callerId)
+        }
     }
 }
 
 extension ViewController: WebRTCConnectionDelegate {
     // MARK: WebRTCConnectionDelegate
+    func webRTCConnection(_ sender: WebRTCConnection, didReceiveDataChanelData data: Data) {
+    }
+
+    func didReceiveIncomingCall(_ sender: WebRTCConnection, from userId: String) {
+        callerId = userId
+    }
 
     func didDisconnect(_ sender: WebRTCConnection) {
         print("DidDisconnect")
@@ -61,6 +77,14 @@ extension ViewController: WebRTCConnectionDelegate {
 
     func webRTCConnection(_ sender: WebRTCConnection, didReceiveRemoteVideoTrack remoteTrack: RTCVideoTrack) {
         remoteTrack.add(self.remoteVideoView)
+    }
+
+    func webRTCConnection(_ sender: WebRTCConnection, userDidJoin userId: String) {
+        connection?.connect(toUserId: userId)
+    }
+
+    func webRTCConnection(_ sender: WebRTCConnection, didChange state: WebRTCConnection.State) {
+        print(state)
     }
 }
 
