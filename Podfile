@@ -5,6 +5,7 @@ target 'Whale' do
 
   # Pods for Whale
   pod 'WAL', :path => '../../lib/WAL'
+  pod 'SIPKeyboardManager'
 
   target 'WhaleTests' do
     inherit! :search_paths

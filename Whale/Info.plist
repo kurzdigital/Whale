@@ -24,6 +24,11 @@
 	<string>Need Camera for video call</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Need Microphone for call</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>voip</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

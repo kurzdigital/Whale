@@ -1,0 +1,6 @@
+framework module SIPKeyboardManager {
+  umbrella header "SIPKeyboardManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

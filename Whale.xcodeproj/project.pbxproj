@@ -15,6 +15,14 @@
 		953BC4C6212B2AEC0055B5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953BC4C4212B2AEC0055B5A6 /* LaunchScreen.storyboard */; };
 		953BC4D1212B2AEC0055B5A6 /* WhaleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BC4D0212B2AEC0055B5A6 /* WhaleTests.swift */; };
 		953BC4DC212B2AEC0055B5A6 /* WhaleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BC4DB212B2AEC0055B5A6 /* WhaleUITests.swift */; };
+		95FC5FA5213A819A007ECCAA /* Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FA4213A819A007ECCAA /* Call.swift */; };
+		95FC5FA7213A81C6007ECCAA /* CallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FA6213A81C6007ECCAA /* CallManager.swift */; };
+		95FC5FAA213B1A1D007ECCAA /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FA9213B1A1C007ECCAA /* ItemViewController.swift */; };
+		95FC5FAC213BEFE6007ECCAA /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FAB213BEFE6007ECCAA /* SoundManager.swift */; };
+		95FC5FAF213C5739007ECCAA /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FAE213C5739007ECCAA /* Item.swift */; };
+		95FC5FB1213C7645007ECCAA /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FB0213C7645007ECCAA /* Config.swift */; };
+		95FC5FB3213C77C7007ECCAA /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FB2213C77C7007ECCAA /* AddItemViewController.swift */; };
+		95FC5FBB213DB3FA007ECCAA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FC5FBA213DB3FA007ECCAA /* Response.swift */; };
 		F31838EB6DBB2F9514141F8E /* Pods_Whale.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6196ECAB7090E822F1DBC39C /* Pods_Whale.framework */; };
 		F57491B02E92FFD2F88BBA85 /* Pods_WhaleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7397832198A863C1CAEA57 /* Pods_WhaleTests.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +64,14 @@
 		953BC4D7212B2AEC0055B5A6 /* WhaleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhaleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		953BC4DB212B2AEC0055B5A6 /* WhaleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhaleUITests.swift; sourceTree = "<group>"; };
 		953BC4DD212B2AEC0055B5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95FC5FA4213A819A007ECCAA /* Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call.swift; sourceTree = "<group>"; };
+		95FC5FA6213A81C6007ECCAA /* CallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallManager.swift; sourceTree = "<group>"; };
+		95FC5FA9213B1A1C007ECCAA /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		95FC5FAB213BEFE6007ECCAA /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		95FC5FAE213C5739007ECCAA /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		95FC5FB0213C7645007ECCAA /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		95FC5FB2213C77C7007ECCAA /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		95FC5FBA213DB3FA007ECCAA /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		CF7397832198A863C1CAEA57 /* Pods_WhaleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhaleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A9A917A21CF3F165206255 /* Pods-WhaleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleUITests/Pods-WhaleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD7FCFCFB06DD863E8FBD9E /* Pods-WhaleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhaleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhaleTests/Pods-WhaleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,12 +140,15 @@
 		953BC4BA212B2AEA0055B5A6 /* Whale */ = {
 			isa = PBXGroup;
 			children = (
+				95FC5FAD213C572D007ECCAA /* Model */,
+				95FC5FA8213B198D007ECCAA /* ViewController */,
+				95FC5FA3213A810D007ECCAA /* CallKit */,
 				953BC4BB212B2AEA0055B5A6 /* AppDelegate.swift */,
-				953BC4BD212B2AEA0055B5A6 /* ViewController.swift */,
 				953BC4BF212B2AEA0055B5A6 /* Main.storyboard */,
 				953BC4C2212B2AEC0055B5A6 /* Assets.xcassets */,
 				953BC4C4212B2AEC0055B5A6 /* LaunchScreen.storyboard */,
 				953BC4C7212B2AEC0055B5A6 /* Info.plist */,
+				95FC5FB0213C7645007ECCAA /* Config.swift */,
 			);
 			path = Whale;
 			sourceTree = "<group>";
@@ -150,6 +169,35 @@
 				953BC4DD212B2AEC0055B5A6 /* Info.plist */,
 			);
 			path = WhaleUITests;
+			sourceTree = "<group>";
+		};
+		95FC5FA3213A810D007ECCAA /* CallKit */ = {
+			isa = PBXGroup;
+			children = (
+				95FC5FA4213A819A007ECCAA /* Call.swift */,
+				95FC5FA6213A81C6007ECCAA /* CallManager.swift */,
+				95FC5FAB213BEFE6007ECCAA /* SoundManager.swift */,
+			);
+			path = CallKit;
+			sourceTree = "<group>";
+		};
+		95FC5FA8213B198D007ECCAA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				953BC4BD212B2AEA0055B5A6 /* ViewController.swift */,
+				95FC5FA9213B1A1C007ECCAA /* ItemViewController.swift */,
+				95FC5FB2213C77C7007ECCAA /* AddItemViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		95FC5FAD213C572D007ECCAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95FC5FAE213C5739007ECCAA /* Item.swift */,
+				95FC5FBA213DB3FA007ECCAA /* Response.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DB46DB167206F2F4179D17CD /* Pods */ = {
@@ -237,6 +285,11 @@
 				TargetAttributes = {
 					953BC4B7212B2AEA0055B5A6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					953BC4CB212B2AEC0055B5A6 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -357,12 +410,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Whale/Pods-Whale-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SIPKeyboardManager/SIPKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/WAL/WAL.framework",
 				"${PODS_ROOT}/WebRTC/WebRTC.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SIPKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WAL.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebRTC.framework",
@@ -380,7 +435,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				953BC4BE212B2AEA0055B5A6 /* ViewController.swift in Sources */,
+				95FC5FA5213A819A007ECCAA /* Call.swift in Sources */,
+				95FC5FAA213B1A1D007ECCAA /* ItemViewController.swift in Sources */,
 				953BC4BC212B2AEA0055B5A6 /* AppDelegate.swift in Sources */,
+				95FC5FBB213DB3FA007ECCAA /* Response.swift in Sources */,
+				95FC5FAF213C5739007ECCAA /* Item.swift in Sources */,
+				95FC5FB3213C77C7007ECCAA /* AddItemViewController.swift in Sources */,
+				95FC5FB1213C7645007ECCAA /* Config.swift in Sources */,
+				95FC5FA7213A81C6007ECCAA /* CallManager.swift in Sources */,
+				95FC5FAC213BEFE6007ECCAA /* SoundManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
