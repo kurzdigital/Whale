@@ -18,9 +18,13 @@ struct Config {
         fileprivate static let formatConstraints = WebRTCConnection.FormatConstraints(
             preferredWidth: 640,
             preferredHeight: 480)
+        fileprivate static let turnServer = WebRTCConnection.TurnServer(
+            url: "turn:notimeforthat.org:3478?transport=udp",
+            username: "macoun",
+            password: "2018")
         static let config = WebRTCConnection.Config(
             signalingServerUrl: "ws://notimeforthat.org:8080/ws",
-            turnServer: nil,
+            turnServer: turnServer,
             stunServerUrl: nil,
             formatConstraints: formatConstraints)
     }

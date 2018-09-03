@@ -144,11 +144,11 @@
 				95FC5FA8213B198D007ECCAA /* ViewController */,
 				95FC5FA3213A810D007ECCAA /* CallKit */,
 				953BC4BB212B2AEA0055B5A6 /* AppDelegate.swift */,
+				95FC5FB0213C7645007ECCAA /* Config.swift */,
 				953BC4BF212B2AEA0055B5A6 /* Main.storyboard */,
 				953BC4C2212B2AEC0055B5A6 /* Assets.xcassets */,
 				953BC4C4212B2AEC0055B5A6 /* LaunchScreen.storyboard */,
 				953BC4C7212B2AEC0055B5A6 /* Info.plist */,
-				95FC5FB0213C7645007ECCAA /* Config.swift */,
 			);
 			path = Whale;
 			sourceTree = "<group>";
