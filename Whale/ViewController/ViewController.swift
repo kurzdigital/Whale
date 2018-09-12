@@ -157,7 +157,6 @@ extension ViewController: CallManagerDelegate {
 
 extension ViewController: RTCEAGLVideoViewDelegate {
     func videoView(_ videoView: RTCEAGLVideoView, didChangeVideoSize size: CGSize) {
-        print(size)
         if size.height > size.width {
             landscapeRemoteVideoAspectRatioConstraint.isActive = false
             portraitRemoteVideoAspectRatioConstraint.isActive = true
