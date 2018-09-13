@@ -77,13 +77,16 @@ class CallManager: NSObject, CXProviderDelegate {
         callUpdate.remoteHandle = CXHandle(type: .generic, value: call.handle)
         callUpdate.hasVideo = true
 
-        provider.reportNewIncomingCall(with: call.uuid, update: callUpdate, completion: { _ in })
+        provider.reportNewIncomingCall(
+            with: call.uuid,
+            update: callUpdate,
+            completion: { _ in })
     }
 
     // MARK: - CXProviderDelegate
-    // TODO: - Wann genau wird das gerufen?
     func providerDidReset(_ provider: CXProvider) {
         print("Provider did reset")
+        reset()
     }
 
     func provider(_ provider: CXProvider, perform action: CXStartCallAction) {
@@ -94,6 +97,7 @@ class CallManager: NSObject, CXProviderDelegate {
             return
         }
 
+        SoundManager.configureAudioSession()
         currentConnection?.connect(toUserId: call.partnerId)
         action.fulfill()
     }
@@ -123,13 +127,24 @@ class CallManager: NSObject, CXProviderDelegate {
         action.fulfill()
     }
 
+    func provider(_ provider: CXProvider, timedOutPerforming action: CXAction) {
+        print(#function)
+    }
+
+    func provider(_ provider: CXProvider, didActivate audioSession: AVAudioSession) {
+        print(#function)
+    }
+
+    func provider(_ provider: CXProvider, didDeactivate audioSession: AVAudioSession) {
+        print(#function)
+    }
+
     func provider(_ provider: CXProvider, perform action: CXSetMutedCallAction) {
         currentConnection?.localAudioTrack?.isEnabled = !action.isMuted
         action.fulfill()
     }
 
     func provider(_ provider: CXProvider, perform action: CXSetHeldCallAction) {
-        reset()
         fatalError("Not Implemented")
     }
 

@@ -619,7 +619,8 @@
 			baseConfigurationReference = 1781432884755A40E615B35A /* Pods-Whale.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 25MXZ8DDDM;
 				INFOPLIST_FILE = Whale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -628,8 +629,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kurzdigital.ios.Whale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "439bba30-79d8-470a-891f-4a9baf398297";
-				PROVISIONING_PROFILE_SPECIFIER = "KDS Team Development Profile (wildcard)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,8 +641,9 @@
 			baseConfigurationReference = 724481C90A0BB1A48DDEC239 /* Pods-Whale.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25MXZ8DDDM;
 				INFOPLIST_FILE = Whale/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

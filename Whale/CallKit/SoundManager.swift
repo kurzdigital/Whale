@@ -16,7 +16,7 @@ struct SoundManager {
             try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try session.setMode(AVAudioSessionModeVideoChat)
             try session.setPreferredIOBufferDuration(0.005)
-            try session.setPreferredSampleRate(4_410)
+            try session.setPreferredSampleRate(44_100)
         } catch {
             fatalError(error.localizedDescription)
         }
