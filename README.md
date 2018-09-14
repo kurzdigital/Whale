@@ -14,7 +14,7 @@ This is a demo application to show the synergy between WebRTC and Callkit. It do
 * coturn or any other turn server
 
 ## Signaling and Turn server
-* We suggest using the [Spreed Signaling Server](https://github.com/strukturag/spreed-webrtc) and the [coturn turn server](https://github.com/coturn/coturn).
+We suggest using the [Spreed Signaling Server](https://github.com/strukturag/spreed-webrtc) and the [coturn turn server](https://github.com/coturn/coturn).
 
 For a more in depth usage description please see the README of our [WebRTC Abstraction Layer lib](https://github.com/kurzdigital/WAL).
 
