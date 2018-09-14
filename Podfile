@@ -4,7 +4,8 @@ target 'Whale' do
   use_frameworks!
 
   # Pods for Whale
-  pod 'WAL', :path => '../../lib/WAL'
+#  pod 'WAL', :path => '../../lib/WAL'
+  pod 'WAL'
   pod 'SIPKeyboardManager'
 
   target 'WhaleTests' do
