@@ -1,31 +1,28 @@
 PODS:
   - SIPKeyboardManager (0.1.0)
   - Starscream (3.0.5)
-  - WAL (0.0.1):
+  - WAL (0.1.0):
     - Starscream
     - WebRTC (~> 63.11)
   - WebRTC (63.11.20455)
 
 DEPENDENCIES:
   - SIPKeyboardManager
-  - WAL (from `../../lib/WAL`)
+  - WAL
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SIPKeyboardManager
     - Starscream
+    - WAL
     - WebRTC
-
-EXTERNAL SOURCES:
-  WAL:
-    :path: "../../lib/WAL"
 
 SPEC CHECKSUMS:
   SIPKeyboardManager: e34d0e04e164b3b3959bdbfb669949c34fdaa58e
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
-  WAL: 0d546ee508c1a0345f1b8439e93cd8fcf2a40be7
+  WAL: fa22c1c4057e7319b21326861f59b768f28066c5
   WebRTC: f2a6203584745fe53532633397557876b5d71640
 
-PODFILE CHECKSUM: e7dcfccd6ca5c5708d382aeea43be0ae47c0c056
+PODFILE CHECKSUM: 513a3f25074352d9571ce5044778a49a74676155
 
 COCOAPODS: 1.5.3
