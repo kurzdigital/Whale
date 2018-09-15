@@ -1,6 +1,6 @@
 Whale
 =====
-![whale](/Whale.png | width=100)
+<img src="/Whale.png" width="100">
 
 This is a demo application to show the synergy between WebRTC and Callkit. It does not claim to be complete or error safe in any way. Only the necessary parts of these both technologies are implemented to show a simple call demo.
 
