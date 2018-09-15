@@ -19,11 +19,11 @@ struct Config {
             preferredWidth: 640,
             preferredHeight: 480)
         fileprivate static let turnServer = WebRTCConnection.TurnServer(
-            url: "turn:notimeforthat.org:3478?transport=udp",
-            username: "macoun",
-            password: "2018")
+            url: "turn:url.org:3478?transport=udp",
+            username: "user",
+            password: "pwd")
         static let config = WebRTCConnection.Config(
-            signalingServerUrl: "ws://notimeforthat.org:8080/ws",
+            signalingServerUrl: "ws://url.org:8080/ws",
             turnServer: turnServer,
             stunServerUrl: nil,
             formatConstraints: formatConstraints)
