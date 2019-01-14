@@ -1,6 +1,6 @@
 {
   "name": "WAL",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "summary": "WebRTC Abstraction Layer",
   "description": "Easy use of WebRTC to build a VoIP app",
   "homepage": "https://kurzdigital.com",
@@ -13,13 +13,13 @@
   "xcconfig": {
     "ENABLE_BITCODE": "NO"
   },
-  "social_media_url": "http://twitter.com/NorbiBraun",
+  "social_media_url": "https://twitter.com/kurzdigital",
   "platforms": {
     "ios": "10.0"
   },
   "source": {
-    "git": "https://git.kurzdigital.com/cbr/WAL",
-    "tag": "0.0.1"
+    "git": "https://github.com/kurzdigital/WAL.git",
+    "tag": "0.1.0"
   },
   "source_files": "WAL/**/*",
   "requires_arc": true,

@@ -13,10 +13,9 @@ struct SoundManager {
         let session = AVAudioSession.sharedInstance()
 
         do {
-            try session.setCategory(AVAudioSessionCategoryPlayAndRecord)
-            try session.setMode(AVAudioSessionModeVideoChat)
+            try session.setCategory(.playAndRecord, mode: .videoChat)
             try session.setPreferredIOBufferDuration(0.005)
-            try session.setPreferredSampleRate(44_100)
+            try session.setPreferredSampleRate(4_410)
         } catch {
             fatalError(error.localizedDescription)
         }
@@ -24,6 +23,9 @@ struct SoundManager {
 
     static func routeAudioToSpeaker() {
         let session = AVAudioSession.sharedInstance()
-        try? session.setCategory(AVAudioSessionCategoryPlayAndRecord, with: .defaultToSpeaker)
+        try? session.setCategory(
+            .playAndRecord,
+            mode: .videoChat,
+            options: [.defaultToSpeaker, .allowBluetooth])
     }
 }

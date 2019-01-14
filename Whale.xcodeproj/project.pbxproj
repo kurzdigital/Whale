@@ -285,6 +285,7 @@
 				TargetAttributes = {
 					953BC4B7212B2AEA0055B5A6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -293,10 +294,12 @@
 					};
 					953BC4CB212B2AEC0055B5A6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 953BC4B7212B2AEA0055B5A6;
 					};
 					953BC4D6212B2AEC0055B5A6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
 						TestTargetID = 953BC4B7212B2AEA0055B5A6;
 					};
 				};
@@ -631,7 +634,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -652,7 +655,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kurzdigital.ios.Whale;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -673,7 +676,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kurzdigital.ios.WhaleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whale.app/Whale";
 			};
@@ -695,7 +698,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kurzdigital.ios.WhaleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Whale.app/Whale";
 			};
@@ -716,7 +719,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kurzdigital.ios.WhaleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Whale;
 			};
@@ -737,7 +740,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kurzdigital.ios.WhaleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Whale;
 			};

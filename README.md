@@ -6,9 +6,9 @@ This is a demo application to show the synergy between WebRTC and Callkit. It do
 
 ## Prerequisite 
 
-* Swift 4.1
+* Swift 4.2
 * CocoaPods
-* Xcode 9
+* Xcode 10
 * Set privacy notice for camera and microphone
 * Docker for the signaling server
 * coturn or any other turn server
@@ -20,7 +20,7 @@ For a more in depth usage description please see the README of our [WebRTC Abstr
 
 ## Config
 
-To configure the app with our own servers and credentials please take a look into the `Config.swift` file.
+To configure the app with your own servers and credentials please take a look into the `Config.swift` file.
 
 ```
 static let config = WebRTCConnection.Config(
@@ -32,6 +32,6 @@ static let config = WebRTCConnection.Config(
 
 ## Usage
 To make two devices connect you have to ensure that at least the signaling server is running. If the two devices are in different networks you also have to run a stun or turn server.
-Make sure to start the app onto the two devices time-shifted. When the connect button is enabled you are ready to make a call.
+Make sure to start the app on the two devices time-shifted. When the connect button is enabled you are ready to make a call.
 All CallKit related code is placed within the `CallManager.swift` file.
 Almost all WebRTC connection related code comes from our [WAL lib](https://github.com/kurzdigital/WAL).

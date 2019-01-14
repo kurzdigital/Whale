@@ -1,6 +1,6 @@
 PODS:
   - SIPKeyboardManager (0.1.0)
-  - Starscream (3.0.5)
+  - Starscream (3.0.6)
   - WAL (0.1.0):
     - Starscream
     - WebRTC (~> 63.11)
@@ -19,7 +19,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   SIPKeyboardManager: e34d0e04e164b3b3959bdbfb669949c34fdaa58e
-  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  Starscream: ef3ece99d765eeccb67de105bfa143f929026cf5
   WAL: fa22c1c4057e7319b21326861f59b768f28066c5
   WebRTC: f2a6203584745fe53532633397557876b5d71640
 
